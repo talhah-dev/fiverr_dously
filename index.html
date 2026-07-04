@@ -1,0 +1,1219 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Dously - Hero Section</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700;800;900&display=swap"
+        rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+    <link rel="stylesheet" href="./docs/style.css">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.css">
+</head>
+
+<body>
+
+    <div id="loader">
+        <div class="loader-text"><span id="loaderCount">0</span>%</div>
+        <div class="loader-track">
+            <div class="loader-fill" id="loaderFill"></div>
+        </div>
+    </div>
+
+    <nav class="nav-glass fixed top-0 left-0 right-0 z-50 px-6 lg:px-12 py-4">
+        <div class="max-w-7xl mx-auto flex items-center justify-between">
+
+            <a href="#" class="flex items-center gap-3">
+                <span class="text-white text-3xl font-bold tracking-wider">Dously</span>
+            </a>
+
+            <div class="hidden lg:flex items-center gap-8 text-sm font-medium text-white/80">
+                <a href="#home" class="nav-link">Home</a>
+
+                <div class="relative group">
+                    <a href="#services-horizontal" class="nav-link inline-flex items-center gap-2">
+                        Services
+                        <i
+                            class="fas fa-chevron-down text-[10px] transition-transform duration-300 group-hover:rotate-180"></i>
+                    </a>
+
+                    <div
+                        class="absolute left-1/2 top-full z-50 w-80 -translate-x-1/2 pt-3 opacity-0 pointer-events-none bg-transparent shadow-none backdrop-blur-none transition-all duration-300 group-hover:opacity-100 group-hover:pointer-events-auto">
+                        <div class="rounded-2xl border border-white/10 bg-[#081523]/95 p-3 shadow-2xl backdrop-blur-xl">
+                            <a href="#it-support"
+                                class="flex items-center justify-between rounded-xl px-4 py-3 text-sm text-white/75 transition-colors hover:bg-white/5 hover:text-white">
+                                IT Support Services <i class="fas fa-arrow-right text-[10px] opacity-50"></i>
+                            </a>
+                            <a href="#cybersecurity"
+                                class="flex items-center justify-between rounded-xl px-4 py-3 text-sm text-white/75 transition-colors hover:bg-white/5 hover:text-white">
+                                Cybersecurity <i class="fas fa-arrow-right text-[10px] opacity-50"></i>
+                            </a>
+                            <a href="#digital-marketing"
+                                class="flex items-center justify-between rounded-xl px-4 py-3 text-sm text-white/75 transition-colors hover:bg-white/5 hover:text-white">
+                                Digital Marketing & Brand <i class="fas fa-arrow-right text-[10px] opacity-50"></i>
+                            </a>
+                            <a href="#web-development"
+                                class="flex items-center justify-between rounded-xl px-4 py-3 text-sm text-white/75 transition-colors hover:bg-white/5 hover:text-white">
+                                Website Dev & Optimisation <i class="fas fa-arrow-right text-[10px] opacity-50"></i>
+                            </a>
+                            <a href="#smart-solutions"
+                                class="flex items-center justify-between rounded-xl px-4 py-3 text-sm text-white/75 transition-colors hover:bg-white/5 hover:text-white">
+                                Smart Solutions <i class="fas fa-arrow-right text-[10px] opacity-50"></i>
+                            </a>
+                            <a href="#services-horizontal"
+                                class="flex items-center justify-between rounded-xl px-4 py-3 text-sm text-white/75 transition-colors hover:bg-white/5 hover:text-white">
+                                Services Overview <i class="fas fa-arrow-right text-[10px] opacity-50"></i>
+                            </a>
+                        </div>
+                    </div>
+                </div>
+
+                <a href="#about" class="nav-link">About</a>
+                <a href="#premium-footer" class="nav-link">Contact</a>
+            </div>
+
+            <div class="hidden lg:flex items-center gap-4">
+                <a href="#"
+                    class="cta-btn text-white px-6 py-2.5 rounded-full text-sm font-semibold flex items-center gap-2">
+                    Book a Demo
+                    <i class="fas fa-arrow-right text-xs"></i>
+                </a>
+            </div>
+
+            <button id="menuToggle" class="lg:hidden text-white text-2xl z-50 focus:outline-none">
+                <i class="fas fa-bars" id="menuIcon"></i>
+            </button>
+        </div>
+    </nav>
+
+    <div id="mobileMenu"
+        class="lg:hidden fixed top-0 right-0 h-screen w-full sm:w-80 bg-[#0A1A2F]/98 backdrop-blur-xl border-l border-[#4A90E2]/20 z-40 pt-24 px-6">
+        <div class="flex flex-col gap-1 text-lg text-white/80 font-medium">
+            <a href="#" class="mobile-link py-4 px-4 rounded-lg flex items-center justify-between">
+                Home <i class="fas fa-chevron-right text-xs opacity-50"></i>
+            </a>
+            <a href="#" class="mobile-link py-4 px-4 rounded-lg flex items-center justify-between">
+                IT Support Services <i class="fas fa-chevron-right text-xs opacity-50"></i>
+            </a>
+            <a href="#" class="mobile-link py-4 px-4 rounded-lg flex items-center justify-between">
+                Cybersecurity <i class="fas fa-chevron-right text-xs opacity-50"></i>
+            </a>
+            <a href="#" class="mobile-link py-4 px-4 rounded-lg flex items-center justify-between">
+                Digital Marketing & Brand <i class="fas fa-chevron-right text-xs opacity-50"></i>
+            </a>
+            <a href="#" class="mobile-link py-4 px-4 rounded-lg flex items-center justify-between">
+                Website Dev & Optimisation <i class="fas fa-chevron-right text-xs opacity-50"></i>
+            </a>
+            <a href="#" class="mobile-link py-4 px-4 rounded-lg flex items-center justify-between">
+                Smart Solutions <i class="fas fa-chevron-right text-xs opacity-50"></i>
+            </a>
+            <a href="#" class="mobile-link py-4 px-4 rounded-lg flex items-center justify-between">
+                About - Our Team <i class="fas fa-chevron-right text-xs opacity-50"></i>
+            </a>
+            <a href="#" class="mobile-link py-4 px-4 rounded-lg flex items-center justify-between">
+                Contact <i class="fas fa-chevron-right text-xs opacity-50"></i>
+            </a>
+
+            <div class="mt-8">
+                <a href="#"
+                    class="cta-btn w-full justify-center text-white px-6 py-4 rounded-full text-base font-semibold flex items-center gap-2">
+                    Book a Demo
+                    <i class="fas fa-arrow-right"></i>
+                </a>
+            </div>
+        </div>
+    </div>
+
+    <section class="hero-section" id="home">
+        <video autoplay muted loop playsinline id="heroVideo">
+            <source src="https://www.pexels.com/download/video/36455207/" type="video/mp4">
+        </video>
+
+        <div class="video-overlay"></div>
+        <div class="grid-overlay"></div>
+        <canvas id="particleCanvas"></canvas>
+        <div class="mouse-glow" id="mouseGlow"></div>
+        <div class="content-wrapper">
+            <div class="badge initial-hidden" id="heroBadge">
+                <span class="text-xs tracking-[0.3em] uppercase text-[#D4AF37] font-medium">Enhancing Businesses Across
+                    Sectors</span>
+            </div>
+
+            <h1 class="font-bold text-white leading-[1.03] tracking-tight mb-6"
+                style="font-size: clamp(2.4rem, 6vw, 5rem);">
+                <span class="word-mask"><span class="word-inner">Technology.</span></span>
+                <span class="word-mask"><span class="word-inner">At</span></span>
+                <span class="word-mask"><span class="word-inner">Scale.</span></span>
+                <span class="word-mask"><span class="word-inner gradient-text">Without</span></span>
+                <span class="word-mask"><span class="word-inner gradient-text">Borders.</span></span>
+            </h1>
+
+            <p class="text-base md:text-lg text-white/70 max-w-2xl mb-8 leading-relaxed font-light initial-hidden"
+                id="heroParagraph">
+                We are a global technology services firm partnering with organisations to design, build and operate
+                digital systems that drive growth, resilience and operational excellence across markets.
+            </p>
+
+            <div class="initial-hidden" id="heroCta">
+                <a href="#" class="cta-btn">
+                    Book a Demo
+                    <i class="fas fa-arrow-right text-sm"></i>
+                </a>
+            </div>
+        </div>
+
+        <div class="scroll-indicator" id="scrollIndicator">
+            <span class="text-[10px] tracking-[0.3em] uppercase text-white/50 font-medium">Scroll</span>
+            <div class="scroll-mouse">
+                <div class="scroll-wheel"></div>
+            </div>
+        </div>
+    </section>
+
+    <section class="relative bg-white py-14 lg:py-32 px-6 lg:px-12 overflow-hidden" id="about">
+        <div class="absolute top-0 right-0 w-1/3 h-1/3 bg-[#4A90E2]/5 rounded-bl-[100px] -z-0"></div>
+        <div class="absolute bottom-20 right-0 w-1/4 h-1/4 bg-[#D4AF37]/5 rounded-tl-[100px] rounded-bl-[100px] -z-0">
+        </div>
+
+        <div class="max-w-7xl mx-auto grid lg:grid-cols-2 gap-12 lg:gap-20 items-center relative z-10">
+
+            <div class="order-2 lg:order-1">
+                <div class="inline-flex items-center gap-3 mb-6">
+                    <span class="w-10 h-[2px] bg-[#D4AF37]"></span>
+                    <span class="text-sm tracking-[0.3em] uppercase text-[#4A90E2] font-semibold">Who We Are</span>
+                </div>
+
+                <h2 class="display text-4xl lg:text-5xl font-bold text-[#0A1A2F] leading-tight mb-8">
+                    Delivering <span class="text-[#4A90E2]">Secure</span> and <span
+                        class="text-[#D4AF37]">Scalable</span> Technology Solutions
+                </h2>
+
+                <h3 class="text-xl lg:text-2xl font-bold text-[#0A1A2F]/80 mb-8 flex items-center gap-3">
+                    <i class="fas fa-handshake text-[#4A90E2]"></i>
+                    Strategic Partner for Digital Growth
+                </h3>
+
+                <div class="space-y-5 text-[#0A1A2F]/70 text-base lg:text-lg leading-relaxed">
+                    <p>We partner with executive teams to solve complex operational and digital challenges through
+                        scalable technology, automation and managed services.</p>
+                    <p>We operate a distributed global delivery model supporting international clients across time
+                        zones, industries and operating environments.</p>
+                    <p class="border-l-4 border-[#4A90E2] pl-5 italic text-[#0A1A2F] font-medium">Our role is not to
+                        supply tools. Our role is to design systems that make organisations faster, leaner, more secure
+                        and more competitive.</p>
+                </div>
+
+                <div class="mt-10 flex flex-wrap gap-8">
+                    <div>
+                        <div class="text-3xl font-bold text-[#0A1A2F] display">Global</div>
+                        <div class="text-sm text-[#0A1A2F]/50 uppercase tracking-wider">Delivery Model</div>
+                    </div>
+                    <div class="w-px h-12 bg-gray-200"></div>
+                    <div>
+                        <div class="text-3xl font-bold text-[#0A1A2F] display">Scalable</div>
+                        <div class="text-sm text-[#0A1A2F]/50 uppercase tracking-wider">Technology</div>
+                    </div>
+                    <div class="w-px h-12 bg-gray-200"></div>
+                    <div>
+                        <div class="text-3xl font-bold text-[#0A1A2F] display">Leaner</div>
+                        <div class="text-sm text-[#0A1A2F]/50 uppercase tracking-wider">Operations</div>
+                    </div>
+                </div>
+            </div>
+
+            <div class="order-1 lg:order-2 relative">
+                <div
+                    class="absolute md:block hidden -top-6 -left-6 w-32 h-32 border-l-4 border-t-4 border-[#D4AF37] rounded-tl-3xl z-20">
+                </div>
+                <div
+                    class="absolute md:block hidden -bottom-6 -right-6 w-32 h-32 border-r-4 border-b-4 border-[#4A90E2] rounded-br-3xl z-20">
+                </div>
+
+                <div class="relative rounded-3xl overflow-hidden shadow-2xl shadow-blue-900/20 group">
+                    <img src="https://images.unsplash.com/photo-1551434678-e076c223a692?q=80&w=2070&auto=format&fit=crop"
+                        alt="Dously Executive Team"
+                        class="w-full h-auto lg:h-[600px] object-cover transition-transform duration-700 group-hover:scale-105">
+                    <div class="absolute inset-0 bg-gradient-to-t from-[#0A1A2F]/80 via-[#0A1A2F]/10 to-transparent">
+                    </div>
+
+                    <div
+                        class="absolute bottom-8 left-8 right-8 md:right-auto md:max-w-sm bg-white/90 backdrop-blur-md p-6 rounded-2xl shadow-xl border border-white/50 md:flex hidden items-center gap-5">
+                        <div
+                            class="w-14 h-14 rounded-xl bg-gradient-to-br from-[#4A90E2] to-[#0F2847] flex items-center justify-center flex-shrink-0">
+                            <i class="fas fa-globe-americas text-white text-xl"></i>
+                        </div>
+                        <div>
+                            <h4 class="font-bold text-[#0A1A2F] text-lg">International Clients</h4>
+                            <p class="text-[#0A1A2F]/60 text-sm">Supported across all time zones & industries.</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+        </div>
+    </section>
+
+
+
+    <section class="relative bg-[#F8FAFC] py-20 lg:py-32 px-6 lg:px-12 overflow-hidden">
+        <div class="absolute top-0 right-0 w-1/3 h-1/2 bg-[#4A90E2]/5 blur-3xl rounded-bl-[100px] z-0"></div>
+        <div class="absolute bottom-0 left-0 w-1/4 h-1/3 bg-[#D4AF37]/5 blur-3xl rounded-tr-[100px] z-0"></div>
+
+        <div class="max-w-7xl mx-auto grid lg:grid-cols-2 md:gap-16 gap-8 lg:gap-24 items-center relative z-10">
+
+            <div class="lg:order-2 order-1">
+                <div class="inline-flex items-center gap-3 mb-6">
+                    <span class="text-sm tracking-[0.3em] uppercase text-[#4A90E2] font-semibold">Operating Model</span>
+                </div>
+
+                <h2 class="text-4xl lg:text-5xl font-bold text-[#0A1A2F] leading-[1.1] mb-6 tracking-tight">
+                    Global. Distributed. <br class="hidden md:block">
+                    <span
+                        class="bg-gradient-to-r from-[#4A90E2] to-[#0A1A2F] bg-clip-text text-transparent">Flexible.</span>
+                </h2>
+
+                <h3 class="text-xl text-[#0A1A2F]/70 mb-10 font-medium leading-relaxed">
+                    We operate a distributed delivery model built for modern enterprises.
+                </h3>
+
+                <div class="space-y-5 mb-10">
+                    <div class="flex items-start gap-4 group">
+                        <div
+                            class="w-12 h-12 rounded-xl bg-[#4A90E2]/10 border border-[#4A90E2]/20 flex items-center justify-center flex-shrink-0 transition-all duration-300 group-hover:bg-[#4A90E2]">
+                            <i
+                                class="fas fa-laptop-house text-lg text-[#4A90E2] group-hover:text-white transition-colors"></i>
+                        </div>
+                        <div>
+                            <h4 class="text-lg font-bold text-[#0A1A2F] mb-1">Remote delivery teams</h4>
+                            <p class="text-[#0A1A2F]/50 text-sm">Access to top global talent unrestricted by geography.
+                            </p>
+                        </div>
+                    </div>
+                    <div class="flex items-start gap-4 group">
+                        <div
+                            class="w-12 h-12 rounded-xl bg-[#D4AF37]/10 border border-[#D4AF37]/20 flex items-center justify-center flex-shrink-0 transition-all duration-300 group-hover:bg-[#D4AF37]">
+                            <i
+                                class="fas fa-map-location-dot text-lg text-[#D4AF37] group-hover:text-white transition-colors"></i>
+                        </div>
+                        <div>
+                            <h4 class="text-lg font-bold text-[#0A1A2F] mb-1">Regional operational presence</h4>
+                            <p class="text-[#0A1A2F]/50 text-sm">Local expertise ensuring compliance and cultural
+                                alignment.</p>
+                        </div>
+                    </div>
+                    <div class="flex items-start gap-4 group">
+                        <div
+                            class="w-12 h-12 rounded-xl bg-[#4A90E2]/10 border border-[#4A90E2]/20 flex items-center justify-center flex-shrink-0 transition-all duration-300 group-hover:bg-[#4A90E2]">
+                            <i
+                                class="fas fa-users-rectangle text-lg text-[#4A90E2] group-hover:text-white transition-colors"></i>
+                        </div>
+                        <div>
+                            <h4 class="text-lg font-bold text-[#0A1A2F] mb-1">On site deployment where required</h4>
+                            <p class="text-[#0A1A2F]/50 text-sm">Physical presence integrated seamlessly with remote
+                                workflows.</p>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="border-l-4 border-[#4A90E2] pl-6 py-2">
+                    <p class="text-[#0A1A2F]/70 text-base lg:text-lg leading-relaxed">
+                        This model enables us to serve clients across borders, scale capacity rapidly and deliver
+                        consistent service regardless of geography or operating environment.
+                    </p>
+                </div>
+            </div>
+
+            <div class="lg:order-1 order-2 relative">
+                <div
+                    class="md:absolute hidden -top-6 -right-6 w-32 h-32 border-r-4 border-t-4 border-[#D4AF37] rounded-tr-3xl z-20">
+                </div>
+                <div
+                    class="md:absolute hidden -bottom-6 -left-6 w-32 h-32 border-l-4 border-b-4 border-[#4A90E2] rounded-bl-3xl z-20">
+                </div>
+
+                <div class="relative rounded-3xl overflow-hidden shadow-2xl shadow-blue-900/10 group">
+                    <img src="https://images.unsplash.com/photo-1521737711867-e3b97375f902?q=80&w=2072&auto=format&fit=crop"
+                        alt="Global distributed team working"
+                        class="w-full h-auto lg:h-[640px] object-cover transition-transform duration-700 group-hover:scale-105">
+                    <div class="absolute inset-0 bg-gradient-to-t from-[#0A1A2F]/60 via-transparent to-transparent">
+                    </div>
+                </div>
+            </div>
+
+        </div>
+    </section>
+
+
+
+    <section id="services-horizontal" class="relative h-screen bg-[#0A1A2F] overflow-hidden">
+        <div class="absolute inset-0 bg-grid opacity-30 pointer-events-none"></div>
+        <div
+            class="absolute top-1/2 left-0 w-[600px] h-[600px] rounded-full bg-[#4A90E2]/10 blur-[150px] pointer-events-none">
+        </div>
+        <div
+            class="absolute bottom-0 right-0 w-[500px] h-[500px] rounded-full bg-[#D4AF37]/5 blur-[150px] pointer-events-none">
+        </div>
+
+        <!-- Sticky Header inside the Pinned Section -->
+        <div class="absolute top-0 left-0 w-full p-6 lg:p-12 pt-16 z-20 flex justify-between items-end pointer-events-none">
+            <div>
+                <div class="flex items-center gap-3 mb-4">
+                    <span class="text-sm tracking-[0.35em] uppercase text-[#D4AF37] font-medium">What We Do</span>
+                </div>
+                <h2 class="text-3xl lg:text-5xl font-bold text-white leading-tight tracking-tight">
+                    Enhancing Businesses with <br class="hidden md:block">
+                    <span class="gradient-text">Smart Workflow</span>
+                </h2>
+            </div>
+            <div class="hidden md:flex items-center gap-2 text-white/40 text-sm font-medium mb-2">
+                <span>Scroll to explore</span>
+                <i class="fas fa-arrow-right text-[#8BC5E8]"></i>
+            </div>
+        </div>
+
+        <!-- Moving Cards Container -->
+        <div id="h-wrapper" class="flex gap-6 lg:gap-10 h-full items-center pl-6 lg:pl-12 pr-[50vw] pt-40">
+
+            <!-- Card 01 -->
+            <div id="it-support"
+                class="h-card flex-shrink-0 w-[320px] md:w-[380px] h-[450px] border border-white/10 rounded-3xl p-8 flex flex-col justify-between relative overflow-hidden">
+                <div
+                    class="absolute top-4 right-6 card-number text-[100px] font-bold text-white/5 leading-none transition-all duration-500">
+                    01</div>
+                <div class="relative z-10">
+                    <div
+                        class="card-icon w-14 h-14 rounded-2xl bg-[#4A90E2]/10 border border-[#4A90E2]/20 flex items-center justify-center mb-8 transition-all duration-500">
+                        <i class="fas fa-headset text-xl text-[#8BC5E8]"></i>
+                    </div>
+                    <h3 class="text-2xl font-bold text-white mb-4 tracking-tight">IT Support Services</h3>
+                    <p class="text-white/50 text-sm leading-relaxed">Building and managing the digital backbone of
+                        modern organizations, ensuring systems perform reliably across geographies.</p>
+                </div>
+                <div class="relative z-10">
+                    <a href="#" class="inline-flex items-center gap-2 text-sm text-[#8BC5E8] font-medium">Learn more <i
+                            class="fas fa-arrow-right text-xs card-arrow transition-all duration-300"></i></a>
+                </div>
+            </div>
+
+            <!-- Card 02 -->
+            <div id="smart-solutions"
+                class="h-card flex-shrink-0 w-[320px] md:w-[380px] h-[450px] border border-white/10 rounded-3xl p-8 flex flex-col justify-between relative overflow-hidden">
+                <div
+                    class="absolute top-4 right-6 card-number text-[100px] font-bold text-white/5 leading-none transition-all duration-500">
+                    02</div>
+                <div class="relative z-10">
+                    <div
+                        class="card-icon w-14 h-14 rounded-2xl bg-[#4A90E2]/10 border border-[#4A90E2]/20 flex items-center justify-center mb-8 transition-all duration-500">
+                        <i class="fas fa-brain text-xl text-[#8BC5E8]"></i>
+                    </div>
+                    <h3 class="text-2xl font-bold text-white mb-4 tracking-tight">Smart Solutions</h3>
+                    <p class="text-white/50 text-sm leading-relaxed">Enabling organizations to shift from manual
+                        operations to intelligent, technology-enabled workflows and automated processes.</p>
+                </div>
+                <div class="relative z-10">
+                    <a href="#" class="inline-flex items-center gap-2 text-sm text-[#8BC5E8] font-medium">Learn more <i
+                            class="fas fa-arrow-right text-xs card-arrow transition-all duration-300"></i></a>
+                </div>
+            </div>
+
+            <!-- Card 03 -->
+            <div
+                class="h-card flex-shrink-0 w-[320px] md:w-[380px] h-[450px] border border-white/10 rounded-3xl p-8 flex flex-col justify-between relative overflow-hidden">
+                <div
+                    class="absolute top-4 right-6 card-number text-[100px] font-bold text-white/5 leading-none transition-all duration-500">
+                    03</div>
+                <div class="relative z-10">
+                    <div
+                        class="card-icon w-14 h-14 rounded-2xl bg-[#4A90E2]/10 border border-[#4A90E2]/20 flex items-center justify-center mb-8 transition-all duration-500">
+                        <i class="fas fa-users-gear text-xl text-[#8BC5E8]"></i>
+                    </div>
+                    <h3 class="text-2xl font-bold text-white mb-4 tracking-tight">HR Support Services</h3>
+                    <p class="text-white/50 text-sm leading-relaxed">Supporting leadership teams in optimizing workforce
+                        operations across distributed environments with strategic HR tech.</p>
+                </div>
+                <div class="relative z-10">
+                    <a href="#" class="inline-flex items-center gap-2 text-sm text-[#8BC5E8] font-medium">Learn more <i
+                            class="fas fa-arrow-right text-xs card-arrow transition-all duration-300"></i></a>
+                </div>
+            </div>
+
+            <!-- Card 04 -->
+            <div id="digital-marketing"
+                class="h-card flex-shrink-0 w-[320px] md:w-[380px] h-[450px] border border-white/10 rounded-3xl p-8 flex flex-col justify-between relative overflow-hidden">
+                <div
+                    class="absolute top-4 right-6 card-number text-[100px] font-bold text-white/5 leading-none transition-all duration-500">
+                    04</div>
+                <div class="relative z-10">
+                    <div
+                        class="card-icon w-14 h-14 rounded-2xl bg-[#4A90E2]/10 border border-[#4A90E2]/20 flex items-center justify-center mb-8 transition-all duration-500">
+                        <i class="fas fa-bullhorn text-xl text-[#8BC5E8]"></i>
+                    </div>
+                    <h3 class="text-2xl font-bold text-white mb-4 tracking-tight">Digital Marketing & Brand</h3>
+                    <p class="text-white/50 text-sm leading-relaxed">Building enterprise-grade digital presence aligned
+                        to business growth through strategic brand development.</p>
+                </div>
+                <div class="relative z-10">
+                    <a href="#" class="inline-flex items-center gap-2 text-sm text-[#8BC5E8] font-medium">Learn more <i
+                            class="fas fa-arrow-right text-xs card-arrow transition-all duration-300"></i></a>
+                </div>
+            </div>
+
+            <!-- Card 05 -->
+            <div id="bpo"
+                class="h-card flex-shrink-0 w-[320px] md:w-[380px] h-[450px] border border-white/10 rounded-3xl p-8 flex flex-col justify-between relative overflow-hidden">
+                <div
+                    class="absolute top-4 right-6 card-number text-[100px] font-bold text-white/5 leading-none transition-all duration-500">
+                    05</div>
+                <div class="relative z-10">
+                    <div
+                        class="card-icon w-14 h-14 rounded-2xl bg-[#4A90E2]/10 border border-[#4A90E2]/20 flex items-center justify-center mb-8 transition-all duration-500">
+                        <i class="fas fa-handshake text-xl text-[#8BC5E8]"></i>
+                    </div>
+                    <h3 class="text-2xl font-bold text-white mb-4 tracking-tight">Business Process Outsourcing</h3>
+                    <p class="text-white/50 text-sm leading-relaxed">Designing and managing outsourced operations,
+                        turning non-core functions into scalable, technology-enabled systems.</p>
+                </div>
+                <div class="relative z-10">
+                    <a href="#" class="inline-flex items-center gap-2 text-sm text-[#8BC5E8] font-medium">Learn more <i
+                            class="fas fa-arrow-right text-xs card-arrow transition-all duration-300"></i></a>
+                </div>
+            </div>
+
+            <!-- Card 06 -->
+            <div id="web-development"
+                class="h-card flex-shrink-0 w-[320px] md:w-[380px] h-[450px] border border-white/10 rounded-3xl p-8 flex flex-col justify-between relative overflow-hidden">
+                <div
+                    class="absolute top-4 right-6 card-number text-[100px] font-bold text-white/5 leading-none transition-all duration-500">
+                    06</div>
+                <div class="relative z-10">
+                    <div
+                        class="card-icon w-14 h-14 rounded-2xl bg-[#4A90E2]/10 border border-[#4A90E2]/20 flex items-center justify-center mb-8 transition-all duration-500">
+                        <i class="fas fa-laptop-code text-xl text-[#8BC5E8]"></i>
+                    </div>
+                    <h3 class="text-2xl font-bold text-white mb-4 tracking-tight">Website Dev & Optimisation</h3>
+                    <p class="text-white/50 text-sm leading-relaxed">Positioning digital assets as operational
+                        infrastructure rather than just marketing tools for high-performance results.</p>
+                </div>
+                <div class="relative z-10">
+                    <a href="#" class="inline-flex items-center gap-2 text-sm text-[#8BC5E8] font-medium">Learn more <i
+                            class="fas fa-arrow-right text-xs card-arrow transition-all duration-300"></i></a>
+                </div>
+            </div>
+
+            <!-- Card 07 -->
+            <div id="cybersecurity"
+                class="h-card flex-shrink-0 w-[320px] md:w-[380px] h-[450px] border border-white/10 rounded-3xl p-8 flex flex-col justify-between relative overflow-hidden">
+                <div
+                    class="absolute top-4 right-6 card-number text-[100px] font-bold text-white/5 leading-none transition-all duration-500">
+                    07</div>
+                <div class="relative z-10">
+                    <div
+                        class="card-icon w-14 h-14 rounded-2xl bg-[#4A90E2]/10 border border-[#4A90E2]/20 flex items-center justify-center mb-8 transition-all duration-500">
+                        <i class="fas fa-shield-halved text-xl text-[#8BC5E8]"></i>
+                    </div>
+                    <h3 class="text-2xl font-bold text-white mb-4 tracking-tight">Cybersecurity</h3>
+                    <p class="text-white/50 text-sm leading-relaxed">Embedding security directly into business
+                        operations as a core foundation rather than an afterthought.</p>
+                </div>
+                <div class="relative z-10">
+                    <a href="#" class="inline-flex items-center gap-2 text-sm text-[#8BC5E8] font-medium">Learn more <i
+                            class="fas fa-arrow-right text-xs card-arrow transition-all duration-300"></i></a>
+                </div>
+            </div>
+
+            <!-- Ending Block -->
+            <div class="flex-shrink-0 w-[400px] h-[450px] flex flex-col justify-center pr-12">
+                <h3 class="text-4xl font-bold text-white/80 leading-tight mb-6 tracking-tight">We do not sell
+                    services.<br><span class="gradient-text">We design operational systems.</span></h3>
+                <a href="#"
+                    class="inline-flex items-center gap-3 bg-gradient-to-r from-[#4A90E2] to-[#2E6FBE] text-white px-8 py-4 rounded-full text-base font-semibold w-fit shadow-lg shadow-blue-500/30 hover:shadow-blue-500/50 transition-all">
+                    Book a Demo <i class="fas fa-arrow-right"></i>
+                </a>
+            </div>
+        </div>
+
+        <div id="progressBar">
+            <div id="progressFill"></div>
+        </div>
+    </section>
+
+    <section id="how-we-work" class="relative bg-white py-24 lg:py-20 px-6 lg:px-12 overflow-hidden">
+        <div class="max-w-7xl mx-auto relative z-10">
+            <!-- Header -->
+            <div class="text-center max-w-3xl mx-auto md:mb-24 mb-10">
+                <div class="inline-flex items-center gap-3 mb-6">
+                    <span class="w-8 h-[1px] bg-[#D4AF37]"></span>
+                    <span class="text-sm tracking-[0.35em] uppercase text-[#D4AF37] font-semibold">HOW WE WORK</span>
+                    <span class="w-8 h-[1px] bg-[#D4AF37]"></span>
+                </div>
+                <h2 class="text-4xl lg:text-5xl font-bold text-black leading-tight tracking-tight mb-6">
+                    Enhancing Businesses with Smart Workflow
+                </h2>
+                <p class="md:text-lg text-gray-400 leading-relaxed">
+                    Our strategy-led engagement model ensures we operate as advisors and delivery partners, not just
+                    transactional vendors delivering short-term fixes.
+                </p>
+            </div>
+
+            <!-- Timeline -->
+            <div id="timeline-container" class="relative max-w-5xl mx-auto">
+                <!-- Base Line -->
+                <div
+                    class="absolute left-1/2 -translate-x-1/2 top-0 w-1 h-full bg-gray-100 rounded-full hidden md:block">
+                </div>
+                <!-- Animated Progress Line -->
+                <div id="timeline-line"
+                    class="absolute left-1/2 -translate-x-1/2 top-0 w-1 h-0 bg-gradient-to-b from-[#4A90E2] to-[#D4AF37] rounded-full hidden md:block">
+                </div>
+
+                <div class="space-y-6 md:space-y-20">
+
+                    <!-- Item 1: Left -->
+                    <div class="relative flex md:justify-start items-center">
+                        <div
+                            class="timeline-card w-full md:w-[42%] bg-white rounded-2xl border border-gray-100 shadow-xl p-8 transition-all duration-500 hover:shadow-2xl hover:-translate-y-1">
+                            <span class="text-sm font-bold text-[#4A90E2] mb-2 block">Step 01</span>
+                            <h3 class="text-2xl font-bold text-black mb-3">Diagnose</h3>
+                            <p class="text-gray-500 leading-relaxed">We begin with executive level discovery to
+                                understand business objectives, operational realities and transformation priorities.</p>
+                            <div class="mt-5 overflow-hidden rounded-2xl border border-gray-100 shadow-lg">
+                                <img src="https://images.unsplash.com/photo-1552664730-d307ca884978?q=80&w=1200&auto=format&fit=crop"
+                                    alt="Discovery workshop"
+                                    class="w-full h-40 object-cover">
+                            </div>
+                        </div>
+                        <div
+                            class="timeline-dot absolute left-1/2 -translate-x-1/2 w-5 h-5 rounded-full bg-[#4A90E2] border-4 border-white shadow-lg z-10 hidden md:block">
+                        </div>
+                    </div>
+
+                    <!-- Item 2: Right -->
+                    <div class="relative flex md:justify-end items-center">
+                        <div
+                            class="timeline-card w-full md:w-[42%] bg-white rounded-2xl border border-gray-100 shadow-xl p-8 transition-all duration-500 hover:shadow-2xl hover:-translate-y-1">
+                            <span class="text-sm font-bold text-[#D4AF37] mb-2 block">Step 02</span>
+                            <h3 class="text-2xl font-bold text-black mb-3">Architect</h3>
+                            <p class="text-gray-500 leading-relaxed">We design technology and operational systems
+                                aligned to strategic outcomes, not short term fixes.</p>
+                            <div class="mt-5 overflow-hidden rounded-2xl border border-gray-100 shadow-lg">
+                                <img src="https://images.unsplash.com/photo-1520607162513-77705c0f0d4a?q=80&w=1200&auto=format&fit=crop"
+                                    alt="Architecture planning"
+                                    class="w-full h-40 object-cover">
+                            </div>
+                        </div>
+                        <div
+                            class="timeline-dot absolute left-1/2 -translate-x-1/2 w-5 h-5 rounded-full bg-[#D4AF37] border-4 border-white shadow-lg z-10 hidden md:block">
+                        </div>
+                    </div>
+
+                    <!-- Item 3: Left -->
+                    <div class="relative flex md:justify-start items-center">
+                        <div
+                            class="timeline-card w-full md:w-[42%] bg-white rounded-2xl border border-gray-100 shadow-xl p-8 transition-all duration-500 hover:shadow-2xl hover:-translate-y-1">
+                            <span class="text-sm font-bold text-[#4A90E2] mb-2 block">Step 03</span>
+                            <h3 class="text-2xl font-bold text-black mb-3">Deliver</h3>
+                            <p class="text-gray-500 leading-relaxed">We deploy through global teams using secure,
+                                governed and SLA driven execution models.</p>
+                            <div class="mt-5 overflow-hidden rounded-2xl border border-gray-100 shadow-lg">
+                                <img src="https://images.unsplash.com/photo-1516321318423-f06f85e504b3?q=80&w=1200&auto=format&fit=crop"
+                                    alt="Delivery team"
+                                    class="w-full h-40 object-cover">
+                            </div>
+                        </div>
+                        <div
+                            class="timeline-dot absolute left-1/2 -translate-x-1/2 w-5 h-5 rounded-full bg-[#4A90E2] border-4 border-white shadow-lg z-10 hidden md:block">
+                        </div>
+                    </div>
+
+                    <!-- Item 4: Right -->
+                    <div class="relative flex md:justify-end items-center">
+                        <div
+                            class="timeline-card w-full md:w-[42%] bg-white rounded-2xl border border-gray-100 shadow-xl p-8 transition-all duration-500 hover:shadow-2xl hover:-translate-y-1">
+                            <span class="text-sm font-bold text-[#D4AF37] mb-2 block">Step 04</span>
+                            <h3 class="text-2xl font-bold text-black mb-3">Operate</h3>
+                            <p class="text-gray-500 leading-relaxed">We manage, optimise and continuously improve
+                                systems to ensure long-term operational excellence.</p>
+                            <div class="mt-5 overflow-hidden rounded-2xl border border-gray-100 shadow-lg">
+                                <img src="https://images.unsplash.com/photo-1497366412874-3415097a27e7?q=80&w=1200&auto=format&fit=crop"
+                                    alt="Operations dashboard"
+                                    class="w-full h-40 object-cover">
+                            </div>
+                        </div>
+                        <div
+                            class="timeline-dot absolute left-1/2 -translate-x-1/2 w-5 h-5 rounded-full bg-[#D4AF37] border-4 border-white shadow-lg z-10 hidden md:block">
+                        </div>
+                    </div>
+
+                </div>
+            </div>
+        </div>
+    </section>
+
+
+
+    <section id="testimonials" class="relative bg-white px-6 lg:px-12 overflow-hidden pt-16 md:pt-0">
+        <div class="absolute top-1/4 left-0 w-96 h-96 rounded-full bg-[#4A90E2]/5 blur-[120px] pointer-events-none">
+        </div>
+        <div class="absolute bottom-0 right-0 w-96 h-96 rounded-full bg-[#D4AF37]/5 blur-[120px] pointer-events-none">
+        </div>
+
+        <div class="max-w-6xl mx-auto relative z-10">
+            <!-- Header -->
+            <div class="text-center max-w-3xl mx-auto mb-16 testimonial-header">
+                <div class="inline-flex items-center gap-3 mb-6">
+                    <span class="w-8 h-[1px] bg-[#D4AF37]"></span>
+                    <span class="text-sm tracking-[0.35em] uppercase text-[#D4AF37] font-semibold">TESTIMONIALS</span>
+                    <span class="w-8 h-[1px] bg-[#D4AF37]"></span>
+                </div>
+                <h2 class="text-4xl lg:text-5xl font-extrabold text-black leading-tight tracking-tight mb-4">
+                    Trusted by Global <br> Enterprises
+                </h2>
+                <p class="text-lg text-gray-400 leading-relaxed">
+                    See what executives say about our operational systems and delivery models.
+                </p>
+            </div>
+
+            <!-- Swiper Slider -->
+            <div class="swiper myTestimonialSwiper relative !pb-20">
+                <div class="swiper-wrapper">
+
+                    <!-- Slide 1 -->
+                    <div class="swiper-slide">
+                        <div
+                            class="bg-white rounded-3xl border border-gray-100  p-8 lg:p-12 h-full flex flex-col">
+                            <div class="flex items-center justify-between mb-8">
+                                <i class="fas fa-quote-left text-5xl text-[#4A90E2]/10"></i>
+                                <div class="flex gap-1 text-[#D4AF37]">
+                                    <i class="fas fa-star"></i><i class="fas fa-star"></i><i class="fas fa-star"></i><i
+                                        class="fas fa-star"></i><i class="fas fa-star"></i>
+                                </div>
+                            </div>
+                            <p class="text-lg lg:text-xl text-[#0A1A2F] leading-relaxed font-medium mb-8 flex-grow">
+                                "Tranter transformed our operational backbone. Their distributed delivery model allowed
+                                us to scale capacity rapidly across borders without compromising on security or
+                                performance. They act as true advisors, not just vendors."
+                            </p>
+                            <div class="flex items-center gap-4 pt-6 border-t border-gray-100">
+                                <img src="https://randomuser.me/api/portraits/men/32.jpg" alt="James Carter"
+                                    class="w-14 h-14 rounded-full object-cover border-2 border-[#4A90E2]/30">
+                                <div>
+                                    <h4 class="font-bold text-black text-lg">James Carter</h4>
+                                    <p class="text-sm text-gray-500">CTO, Global Logistics Inc.</p>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+
+                    <!-- Slide 2 -->
+                    <div class="swiper-slide">
+                        <div
+                            class="bg-white rounded-3xl border border-gray-100  p-8 lg:p-12 h-full flex flex-col">
+                            <div class="flex items-center justify-between mb-8">
+                                <i class="fas fa-quote-left text-5xl text-[#D4AF37]/10"></i>
+                                <div class="flex gap-1 text-[#D4AF37]">
+                                    <i class="fas fa-star"></i><i class="fas fa-star"></i><i class="fas fa-star"></i><i
+                                        class="fas fa-star"></i><i class="fas fa-star"></i>
+                                </div>
+                            </div>
+                            <p class="text-lg lg:text-xl text-[#0A1A2F] leading-relaxed font-medium mb-8 flex-grow">
+                                "The shift from manual operations to automated, smart workflows was seamless. We no
+                                longer worry about IT support or cybersecurity—it's embedded directly into our business
+                                operations. Exceptional service."
+                            </p>
+                            <div class="flex items-center gap-4 pt-6 border-t border-gray-100">
+                                <img src="https://randomuser.me/api/portraits/women/44.jpg" alt="Sophia Lin"
+                                    class="w-14 h-14 rounded-full object-cover border-2 border-[#D4AF37]/30">
+                                <div>
+                                    <h4 class="font-bold text-black text-lg">Sophia Lin</h4>
+                                    <p class="text-sm text-gray-500">COO, FinTech Solutions</p>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+
+                    <!-- Slide 3 -->
+                    <div class="swiper-slide">
+                        <div
+                            class="bg-white rounded-3xl border border-gray-100  p-8 lg:p-12 h-full flex flex-col">
+                            <div class="flex items-center justify-between mb-8">
+                                <i class="fas fa-quote-left text-5xl text-[#4A90E2]/10"></i>
+                                <div class="flex gap-1 text-[#D4AF37]">
+                                    <i class="fas fa-star"></i><i class="fas fa-star"></i><i class="fas fa-star"></i><i
+                                        class="fas fa-star"></i><i class="fas fa-star"></i>
+                                </div>
+                            </div>
+                            <p class="text-lg lg:text-xl text-[#0A1A2F] leading-relaxed font-medium mb-8 flex-grow">
+                                "Managing a high-capacity enterprise environment requires absolute reliability. Their
+                                SLA-driven execution and proactive optimization have made our systems faster, leaner,
+                                and infinitely more competitive."
+                            </p>
+                            <div class="flex items-center gap-4 pt-6 border-t border-gray-100">
+                                <img src="https://randomuser.me/api/portraits/men/75.jpg" alt="Marcus Johnson"
+                                    class="w-14 h-14 rounded-full object-cover border-2 border-[#4A90E2]/30">
+                                <div>
+                                    <h4 class="font-bold text-black text-lg">Marcus Johnson</h4>
+                                    <p class="text-sm text-gray-500">CEO, Enterprise Health Group</p>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+
+                </div>
+
+                <!-- Custom Navigation & Pagination -->
+                <div class="flex items-center justify-center gap-6 mt-12">
+                    <div
+                        class="swiper-button-prev !static !mt-0 !w-12 !h-12 rounded-full border border-gray-200 text-gray-400 hover:bg-[#0A1A2F] hover:text-white hover:border-transparent transition-all duration-300">
+                    </div>
+                    <div class="swiper-pagination !static !mt-0 !w-auto"></div>
+                    <div
+                        class="swiper-button-next !static !mt-0 !w-12 !h-12 rounded-full border border-gray-200 text-gray-400 hover:bg-[#0A1A2F] hover:text-white hover:border-transparent transition-all duration-300">
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <section id="faq" class="relative bg-zinc-50 py-14 lg:py-32 px-6 lg:px-12 overflow-hidden">
+        <div class="max-w-7xl mx-auto grid lg:grid-cols-12 gap-12 lg:gap-20 relative z-10">
+
+            <!-- Left Column: Header -->
+            <div class="lg:col-span-5 faq-header">
+                <div class="inline-flex items-center gap-3 mb-6">
+                    <span class="text-sm tracking-[0.35em] uppercase text-[#D4AF37] font-semibold">FAQ</span>
+                </div>
+                <h2 class="text-4xl lg:text-5xl font-bold text-black leading-tight tracking-tight mb-6">
+                    Frequently Asked <br> Questions
+                </h2>
+                <p class="text-lg text-gray-500 leading-relaxed mb-8 max-w-md">
+                    Everything you need to know about our operational systems, global delivery model, and enterprise
+                    capabilities.
+                </p>
+
+                <div
+                    class="relative mb-8 max-w-md overflow-hidden rounded-3xl shadow-2xl shadow-blue-900/10 border border-gray-100">
+                    <img src="https://images.unsplash.com/photo-1497366754035-f200968a6e72?q=80&w=1200&auto=format&fit=crop"
+                        alt="Team planning session" class="w-full h-64 object-cover">
+                    <div class="absolute inset-0 bg-gradient-to-t from-[#0A1A2F]/40 via-transparent to-transparent">
+                    </div>
+                </div>
+
+                <div class="bg-gray-50 border-l-4 border-[#4A90E2] p-6 rounded-r-xl max-w-md">
+                    <p class="text-gray-600 text-sm mb-4">Still have questions? We are here to help.</p>
+                    <a href="#"
+                        class="inline-flex items-center gap-2 text-sm font-semibold text-[#0A1A2F] hover:text-[#4A90E2] transition-colors">
+                        Contact Support <i class="fas fa-arrow-right text-xs"></i>
+                    </a>
+                </div>
+            </div>
+
+            <!-- Right Column: Accordion -->
+            <div class="lg:col-span-7 faq-accordion flex flex-col">
+
+                <!-- Item 1 -->
+                <div class="faq-item border-b border-gray-200 py-6 cursor-pointer group">
+                    <div class="flex items-center justify-between gap-6">
+                        <h3
+                            class="text-lg lg:text-xl font-bold text-black transition-colors duration-300 group-hover:text-[#4A90E2]">
+                            What does Tranter specialize in?</h3>
+                        <div
+                            class="faq-icon w-10 h-10 rounded-full bg-gray-100 flex items-center justify-center flex-shrink-0 transition-all duration-300 group-hover:bg-[#4A90E2]">
+                            <i
+                                class="fas fa-plus text-sm text-[#4A90E2] group-hover:text-white transition-all duration-300"></i>
+                        </div>
+                    </div>
+                    <div class="faq-content overflow-hidden" style="height: 0;">
+                        <p class="text-gray-500 leading-relaxed pt-5 pr-12 max-w-2xl">
+                            We specialize in designing, building, and operating digital systems. Our core focus includes
+                            IT support, cybersecurity, digital transformation, and operational architecture for modern
+                            enterprises.
+                        </p>
+                    </div>
+                </div>
+
+                <!-- Item 2 -->
+                <div class="faq-item border-b border-gray-200 py-6 cursor-pointer group">
+                    <div class="flex items-center justify-between gap-6">
+                        <h3
+                            class="text-lg lg:text-xl font-bold text-black transition-colors duration-300 group-hover:text-[#4A90E2]">
+                            Does Tranter operate globally?</h3>
+                        <div
+                            class="faq-icon w-10 h-10 rounded-full bg-gray-100 flex items-center justify-center flex-shrink-0 transition-all duration-300 group-hover:bg-[#4A90E2]">
+                            <i
+                                class="fas fa-plus text-sm text-[#4A90E2] group-hover:text-white transition-all duration-300"></i>
+                        </div>
+                    </div>
+                    <div class="faq-content overflow-hidden" style="height: 0;">
+                        <p class="text-gray-500 leading-relaxed pt-5 pr-12 max-w-2xl">
+                            Yes. We utilize a distributed delivery model that allows us to serve international clients
+                            across time zones, backed by regional operational presence and on-site deployment where
+                            required.
+                        </p>
+                    </div>
+                </div>
+
+                <!-- Item 3 -->
+                <div class="faq-item border-b border-gray-200 py-6 cursor-pointer group">
+                    <div class="flex items-center justify-between gap-6">
+                        <h3
+                            class="text-lg lg:text-xl font-bold text-black transition-colors duration-300 group-hover:text-[#4A90E2]">
+                            What industries do you serve?</h3>
+                        <div
+                            class="faq-icon w-10 h-10 rounded-full bg-gray-100 flex items-center justify-center flex-shrink-0 transition-all duration-300 group-hover:bg-[#4A90E2]">
+                            <i
+                                class="fas fa-plus text-sm text-[#4A90E2] group-hover:text-white transition-all duration-300"></i>
+                        </div>
+                    </div>
+                    <div class="faq-content overflow-hidden" style="height: 0;">
+                        <p class="text-gray-500 leading-relaxed pt-5 pr-12 max-w-2xl">
+                            We partner with organizations across various sectors, including finance, healthcare,
+                            logistics, and technology, tailoring our operational systems to meet specific industry
+                            compliance and operational needs.
+                        </p>
+                    </div>
+                </div>
+
+                <!-- Item 4 -->
+                <div class="faq-item border-b border-gray-200 py-6 cursor-pointer group">
+                    <div class="flex items-center justify-between gap-6">
+                        <h3
+                            class="text-lg lg:text-xl font-bold text-black transition-colors duration-300 group-hover:text-[#4A90E2]">
+                            Do you provide managed IT services?</h3>
+                        <div
+                            class="faq-icon w-10 h-10 rounded-full bg-gray-100 flex items-center justify-center flex-shrink-0 transition-all duration-300 group-hover:bg-[#4A90E2]">
+                            <i
+                                class="fas fa-plus text-sm text-[#4A90E2] group-hover:text-white transition-all duration-300"></i>
+                        </div>
+                    </div>
+                    <div class="faq-content overflow-hidden" style="height: 0;">
+                        <p class="text-gray-500 leading-relaxed pt-5 pr-12 max-w-2xl">
+                            Absolutely. We deliver end-to-end managed IT services, ensuring your infrastructure performs
+                            reliably with SLA-driven support, continuous monitoring, and proactive optimization.
+                        </p>
+                    </div>
+                </div>
+
+                <!-- Item 5 -->
+                <div class="faq-item border-b border-gray-200 py-6 cursor-pointer group">
+                    <div class="flex items-center justify-between gap-6">
+                        <h3
+                            class="text-lg lg:text-xl font-bold text-black transition-colors duration-300 group-hover:text-[#4A90E2]">
+                            Can Tranter support enterprise-level organizations?</h3>
+                        <div
+                            class="faq-icon w-10 h-10 rounded-full bg-gray-100 flex items-center justify-center flex-shrink-0 transition-all duration-300 group-hover:bg-[#4A90E2]">
+                            <i
+                                class="fas fa-plus text-sm text-[#4A90E2] group-hover:text-white transition-all duration-300"></i>
+                        </div>
+                    </div>
+                    <div class="faq-content overflow-hidden" style="height: 0;">
+                        <p class="text-gray-500 leading-relaxed pt-5 pr-12 max-w-2xl">
+                            Yes. Our architecture and delivery models are built specifically to scale. We manage
+                            complex, high-capacity environments, ensuring security and performance for large enterprise
+                            workforces.
+                        </p>
+                    </div>
+                </div>
+
+                <!-- Item 6 -->
+                <div class="faq-item border-b border-gray-200 py-6 cursor-pointer group">
+                    <div class="flex items-center justify-between gap-6">
+                        <h3
+                            class="text-lg lg:text-xl font-bold text-black transition-colors duration-300 group-hover:text-[#4A90E2]">
+                            What makes Tranter different from other IT providers?</h3>
+                        <div
+                            class="faq-icon w-10 h-10 rounded-full bg-gray-100 flex items-center justify-center flex-shrink-0 transition-all duration-300 group-hover:bg-[#4A90E2]">
+                            <i
+                                class="fas fa-plus text-sm text-[#4A90E2] group-hover:text-white transition-all duration-300"></i>
+                        </div>
+                    </div>
+                    <div class="faq-content overflow-hidden" style="height: 0;">
+                        <p class="text-gray-500 leading-relaxed pt-5 pr-12 max-w-2xl">
+                            We do not just supply tools; we design operational systems. We operate as strategic
+                            advisors, focusing on making your organization faster, leaner, and more competitive rather
+                            than offering short-term fixes.
+                        </p>
+                    </div>
+                </div>
+
+            </div>
+        </div>
+    </section>
+
+
+    <section id="insights" class="relative bg-white py-14 lg:py-32 px-6 lg:px-12 overflow-hidden">
+        <div class="max-w-7xl mx-auto relative z-10">
+            <!-- Header -->
+            <div class="flex flex-col md:flex-row md:items-end md:justify-between mb-16">
+                <div>
+                    <div class="inline-flex items-center gap-3 mb-6">
+                        <span class="text-sm tracking-[0.35em] uppercase text-[#D4AF37] font-semibold">INSIGHTS</span>
+                    </div>
+                    <h2 class="text-4xl lg:text-5xl font-bold text-black leading-tight tracking-tight max-w-xl">
+                        Latest News & <br> Perspectives
+                    </h2>
+                </div>
+                <p class="text-lg text-gray-400 leading-relaxed max-w-md mt-6 md:mt-0">
+                    Explore our latest insights on operational systems, enterprise technology, and global scaling
+                    strategies.
+                </p>
+            </div>
+
+            <!-- Blog Grid -->
+            <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-8 lg:gap-10">
+
+                <!-- Card 1 -->
+                <article
+                    class="insight-card group bg-white rounded-2xl border border-gray-100 overflow-hidden shadow-sm hover:shadow-2xl transition-all duration-500 hover:-translate-y-2">
+                    <div class="relative w-full h-56 overflow-hidden">
+                        <img src="https://images.unsplash.com/photo-1551288049-bebda4e38f71?q=80&w=2070&auto=format&fit=crop"
+                            alt="Data Analytics Dashboard"
+                            class="w-full h-full object-cover transition-transform duration-700 group-hover:scale-110">
+                        <div
+                            class="absolute inset-0 bg-gradient-to-t from-black/30 to-transparent opacity-0 group-hover:opacity-100 transition-opacity duration-500">
+                        </div>
+                        <span
+                            class="absolute top-4 left-4 bg-[#4A90E2] text-white text-xs font-semibold px-3 py-1.5 rounded-full">Smart
+                            Solutions</span>
+                    </div>
+                    <div class="p-7">
+                        <div class="flex items-center gap-3 text-xs text-gray-400 mb-4">
+                            <span class="flex items-center gap-1.5"><i class="far fa-calendar-alt"></i> May 12,
+                                2024</span>
+                            <span class="flex items-center gap-1.5"><i class="far fa-clock"></i> 5 min read</span>
+                        </div>
+                        <h3
+                            class="text-xl font-bold text-black mb-3 leading-snug transition-colors duration-300 group-hover:text-[#4A90E2]">
+                            Future of Distributed Workforces
+                        </h3>
+                        <p class="text-gray-500 text-sm leading-relaxed mb-5">
+                            How global delivery models are replacing traditional office setups and driving unprecedented
+                            operational scalability.
+                        </p>
+                        <a href="#"
+                            class="inline-flex items-center gap-2 text-sm font-semibold text-[#0A1A2F] group-hover:text-[#4A90E2] transition-colors">
+                            Read More <i
+                                class="fas fa-arrow-right text-xs group-hover:translate-x-1 transition-transform"></i>
+                        </a>
+                    </div>
+                </article>
+
+                <!-- Card 2 -->
+                <article
+                    class="insight-card group bg-white rounded-2xl border border-gray-100 overflow-hidden shadow-sm hover:shadow-2xl transition-all duration-500 hover:-translate-y-2">
+                    <div class="relative w-full h-56 overflow-hidden">
+                        <img src="https://images.unsplash.com/photo-1550751827-4bd374c3f58b?q=80&w=2070&auto=format&fit=crop"
+                            alt="Cybersecurity Concept"
+                            class="w-full h-full object-cover transition-transform duration-700 group-hover:scale-110">
+                        <div
+                            class="absolute inset-0 bg-gradient-to-t from-black/30 to-transparent opacity-0 group-hover:opacity-100 transition-opacity duration-500">
+                        </div>
+                        <span
+                            class="absolute top-4 left-4 bg-[#D4AF37] text-[#0A1A2F] text-xs font-semibold px-3 py-1.5 rounded-full">Cybersecurity</span>
+                    </div>
+                    <div class="p-7">
+                        <div class="flex items-center gap-3 text-xs text-gray-400 mb-4">
+                            <span class="flex items-center gap-1.5"><i class="far fa-calendar-alt"></i> May 08,
+                                2024</span>
+                            <span class="flex items-center gap-1.5"><i class="far fa-clock"></i> 7 min read</span>
+                        </div>
+                        <h3
+                            class="text-xl font-bold text-black mb-3 leading-snug transition-colors duration-300 group-hover:text-[#4A90E2]">
+                            Zero Trust Architecture in 2024
+                        </h3>
+                        <p class="text-gray-500 text-sm leading-relaxed mb-5">
+                            Why embedding security directly into your operations is no longer optional for
+                            enterprise-level organizations.
+                        </p>
+                        <a href="#"
+                            class="inline-flex items-center gap-2 text-sm font-semibold text-[#0A1A2F] group-hover:text-[#4A90E2] transition-colors">
+                            Read More <i
+                                class="fas fa-arrow-right text-xs group-hover:translate-x-1 transition-transform"></i>
+                        </a>
+                    </div>
+                </article>
+
+                <!-- Card 3 -->
+                <article
+                    class="insight-card group bg-white rounded-2xl border border-gray-100 overflow-hidden shadow-sm hover:shadow-2xl transition-all duration-500 hover:-translate-y-2">
+                    <div class="relative w-full h-56 overflow-hidden">
+                        <img src="https://images.unsplash.com/photo-1486406146926-c627a92ad1ab?q=80&w=2070&auto=format&fit=crop"
+                            alt="Modern Corporate Building"
+                            class="w-full h-full object-cover transition-transform duration-700 group-hover:scale-110">
+                        <div
+                            class="absolute inset-0 bg-gradient-to-t from-black/30 to-transparent opacity-0 group-hover:opacity-100 transition-opacity duration-500">
+                        </div>
+                        <span
+                            class="absolute top-4 left-4 bg-[#0A1A2F] text-white text-xs font-semibold px-3 py-1.5 rounded-full">IT
+                            Support</span>
+                    </div>
+                    <div class="p-7">
+                        <div class="flex items-center gap-3 text-xs text-gray-400 mb-4">
+                            <span class="flex items-center gap-1.5"><i class="far fa-calendar-alt"></i> April 28,
+                                2024</span>
+                            <span class="flex items-center gap-1.5"><i class="far fa-clock"></i> 4 min read</span>
+                        </div>
+                        <h3
+                            class="text-xl font-bold text-black mb-3 leading-snug transition-colors duration-300 group-hover:text-[#4A90E2]">
+                            Optimising IT for Global Scale
+                        </h3>
+                        <p class="text-gray-500 text-sm leading-relaxed mb-5">
+                            Building a digital backbone that performs reliably across geographies and complex operating
+                            environments.
+                        </p>
+                        <a href="#"
+                            class="inline-flex items-center gap-2 text-sm font-semibold text-[#0A1A2F] group-hover:text-[#4A90E2] transition-colors">
+                            Read More <i
+                                class="fas fa-arrow-right text-xs group-hover:translate-x-1 transition-transform"></i>
+                        </a>
+                    </div>
+                </article>
+
+            </div>
+        </div>
+    </section>
+
+    <footer id="premium-footer" class="relative bg-[#0A1A2F] text-white pt-14 pb-12 px-6 lg:px-12 overflow-hidden">
+        <div class="absolute top-0 left-1/4 w-96 h-96 rounded-full bg-[#4A90E2]/10 blur-[150px] pointer-events-none">
+        </div>
+        <div class="absolute bottom-0 right-1/4 w-96 h-96 rounded-full bg-[#D4AF37]/5 blur-[150px] pointer-events-none">
+        </div>
+
+        <div class="max-w-7xl mx-auto relative z-10">
+
+            <!-- Top CTA Banner -->
+            <div
+                class="footer-cta relative bg-gradient-to-r from-[#0F2847] to-[#0A1A2F] border border-white/10 rounded-3xl p-10 lg:p-14 md:mb-24 mb-10 overflow-hidden shadow-2xl">
+                <div class="absolute top-0 right-0 w-64 h-64 bg-[#4A90E2]/20 blur-[80px]"></div>
+                <div class="relative flex flex-col lg:flex-row items-center justify-between gap-8 z-10">
+                    <div class="text-center lg:text-left">
+                        <h2 class="text-3xl lg:text-4xl font-bold tracking-tight mb-3">
+                            Ready to scale globally?
+                        </h2>
+                        <p class="text-white/60 text-lg max-w-xl">
+                            Let's design operational systems that make your organization faster, leaner, and more
+                            competitive.
+                        </p>
+                    </div>
+                    <a href="#"
+                        class="flex-shrink-0 inline-flex items-center gap-3 bg-gradient-to-r from-[#4A90E2] to-[#2E6FBE] text-white px-8 py-4 rounded-full text-base font-semibold shadow-lg shadow-blue-500/30 hover:shadow-blue-500/60 hover:-translate-y-1 transition-all duration-300">
+                        Book a Demo
+                        <i class="fas fa-arrow-right text-sm"></i>
+                    </a>
+                </div>
+            </div>
+
+            <!-- Main Footer Grid -->
+            <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-12 gap-12 mb-16">
+
+                <!-- Brand & Description -->
+                <div class="lg:col-span-4 footer-col">
+                    <a href="#" class="flex items-center gap-3 mb-6">
+                        <span class="text-3xl font-extrabold tracking-wider text-white">Dously</span>
+                    </a>
+                    <p class="text-white/50 text-sm leading-relaxed mb-8 max-w-sm">
+                        A global technology services firm partnering with organisations to design, build and operate
+                        digital systems.
+                    </p>
+                    <div class="flex items-center gap-4">
+                        <a href="#"
+                            class="w-10 h-10 rounded-full border border-white/10 flex items-center justify-center text-white/60 hover:bg-[#4A90E2] hover:text-white hover:border-transparent transition-all duration-300">
+                            <i class="fab fa-linkedin-in"></i>
+                        </a>
+                        <a href="#"
+                            class="w-10 h-10 rounded-full border border-white/10 flex items-center justify-center text-white/60 hover:bg-[#4A90E2] hover:text-white hover:border-transparent transition-all duration-300">
+                            <i class="fab fa-twitter"></i>
+                        </a>
+                        <a href="#"
+                            class="w-10 h-10 rounded-full border border-white/10 flex items-center justify-center text-white/60 hover:bg-[#4A90E2] hover:text-white hover:border-transparent transition-all duration-300">
+                            <i class="fab fa-facebook-f"></i>
+                        </a>
+                        <a href="#"
+                            class="w-10 h-10 rounded-full border border-white/10 flex items-center justify-center text-white/60 hover:bg-[#4A90E2] hover:text-white hover:border-transparent transition-all duration-300">
+                            <i class="fab fa-instagram"></i>
+                        </a>
+                    </div>
+                </div>
+
+                <!-- Services Links -->
+                <div class="lg:col-span-2 footer-col">
+                    <h4 class="text-sm font-bold uppercase tracking-wider text-white mb-6">Services</h4>
+                    <ul class="space-y-4 text-sm">
+                        <li><a href="#" class="footer-link text-white/60 hover:text-white transition-colors">IT
+                                Support</a></li>
+                        <li><a href="#"
+                                class="footer-link text-white/60 hover:text-white transition-colors">Cybersecurity</a>
+                        </li>
+                        <li><a href="#" class="footer-link text-white/60 hover:text-white transition-colors">Smart
+                                Solutions</a></li>
+                        <li><a href="#" class="footer-link text-white/60 hover:text-white transition-colors">Digital
+                                Marketing</a></li>
+                        <li><a href="#" class="footer-link text-white/60 hover:text-white transition-colors">Web
+                                Development</a></li>
+                    </ul>
+                </div>
+
+                <!-- Company Links -->
+                <div class="lg:col-span-2 footer-col">
+                    <h4 class="text-sm font-bold uppercase tracking-wider text-white mb-6">Company</h4>
+                    <ul class="space-y-4 text-sm">
+                        <li><a href="#" class="footer-link text-white/60 hover:text-white transition-colors">About
+                                Us</a></li>
+                        <li><a href="#" class="footer-link text-white/60 hover:text-white transition-colors">Our
+                                Team</a></li>
+                        <li><a href="#" class="footer-link text-white/60 hover:text-white transition-colors">Careers</a>
+                        </li>
+                        <li><a href="#" class="footer-link text-white/60 hover:text-white transition-colors">Contact</a>
+                        </li>
+                        <li><a href="#" class="footer-link text-white/60 hover:text-white transition-colors">FAQ</a>
+                        </li>
+                    </ul>
+                </div>
+
+                <!-- Newsletter / Contact -->
+                <div class="lg:col-span-4 footer-col">
+                    <h4 class="text-sm font-bold uppercase tracking-wider text-white mb-6">Stay Updated</h4>
+                    <p class="text-white/50 text-sm mb-5">Subscribe to our newsletter for insights on tech and
+                        operations.</p>
+                    <form class="flex flex-col sm:flex-row gap-3 mb-8">
+                        <input type="email" placeholder="Enter your email"
+                            class="flex-1 bg-white/5 border border-white/10 rounded-full px-5 py-3 text-sm text-white placeholder-white/40 focus:outline-none focus:border-[#4A90E2] transition-colors">
+                        <button type="button"
+                            class="bg-[#D4AF37] text-[#0A1A2F] font-semibold rounded-full px-6 py-3 text-sm hover:bg-[#F4D87E] transition-all duration-300 flex items-center justify-center gap-2">
+                            Subscribe <i class="fas fa-paper-plane text-xs"></i>
+                        </button>
+                    </form>
+                    <div class="flex items-center gap-3 text-sm text-white/60">
+                        <i class="fas fa-headset text-[#4A90E2]"></i>
+                        <span>24/7 Enterprise Support: +1 (555) 000-0000</span>
+                    </div>
+                </div>
+
+            </div>
+
+            <!-- Bottom Bar -->
+            <div class="pt-8 border-t border-white/10 flex flex-col md:flex-row items-center justify-between gap-6">
+                <p class="text-sm text-white/40">© 2024 Dously Compliance. All rights reserved.</p>
+                <div class="flex items-center gap-6 text-sm text-white/40">
+                    <a href="#" class="hover:text-white transition-colors">Privacy Policy</a>
+                    <a href="#" class="hover:text-white transition-colors">Terms of Service</a>
+                    <a href="#" class="hover:text-white transition-colors">Cookies</a>
+                </div>
+                <button id="backToTop"
+                    class="w-10 h-10 rounded-full border border-white/20 flex items-center justify-center text-white/70 hover:bg-[#4A90E2] hover:border-transparent hover:text-white transition-all duration-300">
+                    <i class="fas fa-arrow-up text-sm"></i>
+                </button>
+            </div>
+        </div>
+    </footer>
+
+    <script src="https://cdn.tailwindcss.com"></script>
+    <script src="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.12.5/gsap.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.12.5/ScrollTrigger.min.js"></script>
+    <script src="./docs/script.js"></script>
+</body>
+
+</html>
