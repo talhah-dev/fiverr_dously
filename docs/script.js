@@ -74,35 +74,6 @@ window.addEventListener("load", () => {
     }
 });
 
-const menuToggle = document.getElementById("menuToggle");
-const mobileMenu = document.getElementById("mobileMenu");
-const menuIcon = document.getElementById("menuIcon");
-let menuOpen = false;
-
-gsap.set(mobileMenu, { x: "100%" });
-
-menuToggle.addEventListener("click", () => {
-    menuOpen = !menuOpen;
-    if (menuOpen) {
-        mobileMenu.style.display = "block";
-        menuIcon.classList.remove("fa-bars");
-        menuIcon.classList.add("fa-times");
-        gsap.to(mobileMenu, { x: "0%", duration: 0.5, ease: "expo.out" });
-        gsap.fromTo(".mobile-link",
-            { opacity: 0, x: 50 },
-            { opacity: 1, x: 0, duration: 0.4, stagger: 0.05, ease: "power2.out", delay: 0.1 }
-        );
-    } else {
-        menuIcon.classList.remove("fa-times");
-        menuIcon.classList.add("fa-bars");
-        gsap.to(mobileMenu, {
-            x: "100%", duration: 0.5, ease: "expo.in", onComplete: () => {
-                if (!menuOpen) mobileMenu.style.display = "none";
-            }
-        });
-    }
-});
-
 const canvas = document.getElementById("particleCanvas");
 const ctx = canvas.getContext("2d");
 let particles = [];
@@ -253,53 +224,6 @@ function playHeroAnimations() {
             opacity: 1,
             duration: 0.55,
         }, "-=0.3");
-}
-
-// GSAP Reveal Animation for Footer Columns
-if (document.querySelector(".footer-col")) {
-    gsap.from(".footer-col", {
-        opacity: 0,
-        y: 50,
-        duration: 1,
-        stagger: 0.15,
-        ease: "expo.out",
-        scrollTrigger: {
-            trigger: "#premium-footer",
-            start: "top 85%"
-        }
-    });
-}
-
-// CTA Bounce-in Animation
-if (document.querySelector(".footer-cta")) {
-    gsap.from(".footer-cta", {
-        opacity: 0,
-        scale: 0.95,
-        y: 60,
-        duration: 1.2,
-        ease: "expo.out",
-        scrollTrigger: {
-            trigger: "#premium-footer",
-            start: "top 90%"
-        }
-    });
-}
-
-// Back to Top Button Logic
-const backToTopBtn = document.getElementById("backToTop");
-
-if (backToTopBtn) {
-    window.addEventListener("scroll", () => {
-        if (window.scrollY > 400) {
-            backToTopBtn.classList.add("visible");
-        } else {
-            backToTopBtn.classList.remove("visible");
-        }
-    });
-
-    backToTopBtn.addEventListener("click", () => {
-        window.scrollTo({ top: 0, behavior: "smooth" });
-    });
 }
 
 // Section scroll reveal animation

@@ -1,0 +1,300 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>AUDITRA - Contact Us</title>
+    <script src="https://cdn.tailwindcss.com"></script>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700;800;900&display=swap"
+        rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+    <link rel="stylesheet" href="./docs/style.css">
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.12.5/gsap.min.js"></script>
+    <style>
+        .hero-overlay {
+            background: radial-gradient(circle at 20% 30%, rgba(74, 144, 226, 0.15) 0%, transparent 50%), radial-gradient(circle at 80% 70%, rgba(212, 175, 55, 0.08) 0%, transparent 50%), linear-gradient(180deg, rgba(10, 26, 47, 0.8) 0%, rgba(10, 26, 47, 1) 100%);
+        }
+
+        .grid-overlay {
+            background-image: linear-gradient(rgba(74, 144, 226, 0.06) 1px, transparent 1px), linear-gradient(90deg, rgba(74, 144, 226, 0.06) 1px, transparent 1px);
+            background-size: 80px 80px;
+            mask-image: radial-gradient(circle at center, black 10%, transparent 80%);
+            -webkit-mask-image: radial-gradient(circle at center, black 10%, transparent 80%);
+        }
+
+        .word-mask {
+            display: inline-block;
+            overflow: hidden;
+            vertical-align: bottom;
+        }
+
+        .word-inner {
+            display: inline-block;
+            transform: translateY(120%);
+            opacity: 0;
+        }
+
+        .form-input {
+            transition: all 0.3s ease;
+        }
+
+        .form-input:focus {
+            border-color: #4A90E2;
+            box-shadow: 0 0 0 4px rgba(74, 144, 226, 0.1);
+        }
+
+        .cta-btn {
+            background: linear-gradient(135deg, #4A90E2 0%, #2E6FBE 100%);
+            box-shadow: 0 10px 30px rgba(74, 144, 226, 0.3);
+            transition: all 0.3s ease;
+        }
+
+        .cta-btn:hover {
+            transform: translateY(-2px);
+            box-shadow: 0 15px 40px rgba(74, 144, 226, 0.5);
+        }
+
+        .contact-card {
+            transition: all 0.4s ease;
+        }
+
+        .contact-card:hover {
+            border-color: rgba(74, 144, 226, 0.5);
+            transform: translateY(-5px);
+            box-shadow: 0 20px 40px rgba(10, 26, 47, 0.08);
+        }
+    </style>
+</head>
+
+<body>
+
+    <div id="navbar"></div>
+
+    <!-- Hero Section -->
+    <section class="relative min-h-[60vh]  flex items-center justify-center overflow-hidden bg-[#0A1A2F] pt-24 pb-12">
+        <div class="absolute inset-0 hero-overlay z-0"></div>
+        <div class="absolute inset-0 grid-overlay z-0 opacity-40"></div>
+
+        <!-- Orbs -->
+        <div class="absolute top-1/4 -left-20 w-96 h-96 rounded-full bg-[#4A90E2]/10 blur-[120px] z-0"></div>
+        <div class="absolute bottom-0 -right-20 w-96 h-96 rounded-full bg-[#D4AF37]/10 blur-[120px] z-0"></div>
+
+        <div class="relative z-10 text-center px-6 py-20 max-w-4xl mx-auto">
+            <div class="word-mask inline-flex items-center gap-3 mb-8">
+                <span class="word-inner inline-flex items-center gap-3">
+                    <span class="w-12 h-[1px] bg-gradient-to-r from-transparent to-[#D4AF37]"></span>
+                    <span class="text-sm tracking-[0.35em] uppercase text-[#D4AF37] font-medium">Get In Touch</span>
+                    <span class="w-12 h-[1px] bg-gradient-to-l from-transparent to-[#D4AF37]"></span>
+                </span>
+            </div>
+
+            <h1 class="font-bold text-white leading-[1.1] tracking-tight mb-6"
+                style="font-size: clamp(2.5rem, 6vw, 4.5rem);">
+                <span class="word-mask"><span class="word-inner">Let's</span></span>
+                <span class="word-mask"><span class="word-inner">Build</span></span>
+                <span class="word-mask"><span class="word-inner">Your</span></span>
+                <span class="word-mask"><span
+                        class="word-inner bg-gradient-to-r from-[#8BC5E8] to-[#4A90E2] bg-clip-text text-transparent">Operational
+                        System</span></span>
+            </h1>
+
+            <p class="word-mask">
+                <span
+                    class="word-inner text-lg md:text-xl text-white/60 max-w-2xl mx-auto leading-relaxed font-light block">
+                    Reach out to our advisory team to discuss how we can design, build, and manage your enterprise
+                    digital systems.
+                </span>
+            </p>
+        </div>
+    </section>
+
+    <!-- Contact Form & Info Section -->
+    <section class="relative bg-[#F8FAFC] py-14 lg:py-32 px-6 lg:px-12 -mt-12 z-10 rounded-t-[40px]">
+        <div class="max-w-7xl mx-auto grid lg:grid-cols-12 gap-12 lg:gap-20 items-start">
+
+            <!-- Left: Contact Information -->
+            <div class="lg:col-span-5">
+                <div class="inline-flex items-center gap-3 mb-6">
+                    <span class="text-sm tracking-[0.35em] uppercase text-[#D4AF37] font-semibold">CONTACT
+                        DETAILS</span>
+                </div>
+                <h2 class="text-3xl lg:text-4xl font-extrabold text-black leading-tight tracking-tight mb-6">
+                    Connect with our <br> Global Team
+                </h2>
+                <p class="text-lg text-gray-500 leading-relaxed mb-12">
+                    We operate a distributed delivery model. Reach out to the nearest regional hub or send us a direct
+                    message.
+                </p>
+
+                <div class="space-y-6">
+                    <!-- Card 1: Phone -->
+                    <div
+                        class="contact-card bg-white border border-gray-100 rounded-2xl p-6 flex items-center gap-5 shadow-sm">
+                        <div
+                            class="w-14 h-14 rounded-xl bg-[#4A90E2]/10 flex items-center justify-center flex-shrink-0">
+                            <i class="fas fa-phone-alt text-xl text-[#4A90E2]"></i>
+                        </div>
+                        <div>
+                            <h4 class="text-xs uppercase tracking-wider text-gray-400 font-bold mb-1">Call Us</h4>
+                            <p class="text-lg font-semibold text-black">+1 (555) 000-0000</p>
+                            <p class="text-sm text-gray-400">Mon - Fri: 9am to 6pm</p>
+                        </div>
+                    </div>
+
+                    <!-- Card 2: Email -->
+                    <div
+                        class="contact-card bg-white border border-gray-100 rounded-2xl p-6 flex items-center gap-5 shadow-sm">
+                        <div
+                            class="w-14 h-14 rounded-xl bg-[#D4AF37]/10 flex items-center justify-center flex-shrink-0">
+                            <i class="fas fa-envelope-open-text text-xl text-[#D4AF37]"></i>
+                        </div>
+                        <div>
+                            <h4 class="text-xs uppercase tracking-wider text-gray-400 font-bold mb-1">Email Us</h4>
+                            <p class="text-lg font-semibold text-black">hello@auditra.com</p>
+                            <p class="text-sm text-gray-400">24/7 Enterprise Support</p>
+                        </div>
+                    </div>
+
+                    <!-- Card 3: Location -->
+                    <div
+                        class="contact-card bg-white border border-gray-100 rounded-2xl p-6 flex items-center gap-5 shadow-sm">
+                        <div
+                            class="w-14 h-14 rounded-xl bg-[#4A90E2]/10 flex items-center justify-center flex-shrink-0">
+                            <i class="fas fa-map-marker-alt text-xl text-[#4A90E2]"></i>
+                        </div>
+                        <div>
+                            <h4 class="text-xs uppercase tracking-wider text-gray-400 font-bold mb-1">Visit Us</h4>
+                            <p class="text-lg font-semibold text-black">123 Tech Boulevard</p>
+                            <p class="text-sm text-gray-400">New York, NY 10001</p>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="mt-10 pt-10 border-t border-gray-200">
+                    <h4 class="text-sm uppercase tracking-wider text-gray-400 font-bold mb-4">Follow Us</h4>
+                    <div class="flex items-center gap-3">
+                        <a href="#"
+                            class="w-11 h-11 rounded-full border border-gray-200 flex items-center justify-center text-gray-500 hover:bg-[#0A1A2F] hover:text-white hover:border-transparent transition-all duration-300">
+                            <i class="fab fa-linkedin-in"></i>
+                        </a>
+                        <a href="#"
+                            class="w-11 h-11 rounded-full border border-gray-200 flex items-center justify-center text-gray-500 hover:bg-[#0A1A2F] hover:text-white hover:border-transparent transition-all duration-300">
+                            <i class="fab fa-twitter"></i>
+                        </a>
+                        <a href="#"
+                            class="w-11 h-11 rounded-full border border-gray-200 flex items-center justify-center text-gray-500 hover:bg-[#0A1A2F] hover:text-white hover:border-transparent transition-all duration-300">
+                            <i class="fab fa-facebook-f"></i>
+                        </a>
+                        <a href="#"
+                            class="w-11 h-11 rounded-full border border-gray-200 flex items-center justify-center text-gray-500 hover:bg-[#0A1A2F] hover:text-white hover:border-transparent transition-all duration-300">
+                            <i class="fab fa-instagram"></i>
+                        </a>
+                    </div>
+                </div>
+            </div>
+
+            <!-- Right: Contact Form -->
+            <div class="lg:col-span-7 relative">
+                <div
+                    class="absolute -top-6 -right-6 w-32 h-32 border-r-4 border-t-4 border-[#D4AF37] rounded-tr-3xl z-20 hidden lg:block">
+                </div>
+                <div
+                    class="absolute -bottom-6 -left-6 w-32 h-32 border-l-4 border-b-4 border-[#4A90E2] rounded-bl-3xl z-20 hidden lg:block">
+                </div>
+
+                <div
+                    class="bg-white rounded-3xl shadow-2xl shadow-blue-900/5 p-8 lg:p-12 border border-gray-50 relative z-10">
+                    <h3 class="text-2xl font-bold text-black mb-2">Send us a message</h3>
+                    <p class="text-gray-400 mb-8">Fill out the form below and our team will get back to you within 24
+                        hours.</p>
+
+                    <form class="space-y-6">
+                        <div class="grid md:grid-cols-2 gap-6">
+                            <div>
+                                <label class="block text-sm font-medium text-gray-600 mb-2">First Name</label>
+                                <input type="text" placeholder="John"
+                                    class="form-input w-full bg-[#F8FAFC] border border-gray-200 rounded-xl px-4 py-3.5 text-black placeholder-gray-400 focus:outline-none">
+                            </div>
+                            <div>
+                                <label class="block text-sm font-medium text-gray-600 mb-2">Last Name</label>
+                                <input type="text" placeholder="Doe"
+                                    class="form-input w-full bg-[#F8FAFC] border border-gray-200 rounded-xl px-4 py-3.5 text-black placeholder-gray-400 focus:outline-none">
+                            </div>
+                        </div>
+
+                        <div class="grid md:grid-cols-2 gap-6">
+                            <div>
+                                <label class="block text-sm font-medium text-gray-600 mb-2">Email Address</label>
+                                <input type="email" placeholder="john@company.com"
+                                    class="form-input w-full bg-[#F8FAFC] border border-gray-200 rounded-xl px-4 py-3.5 text-black placeholder-gray-400 focus:outline-none">
+                            </div>
+                            <div>
+                                <label class="block text-sm font-medium text-gray-600 mb-2">Phone Number</label>
+                                <input type="tel" placeholder="+1 (555) 000-0000"
+                                    class="form-input w-full bg-[#F8FAFC] border border-gray-200 rounded-xl px-4 py-3.5 text-black placeholder-gray-400 focus:outline-none">
+                            </div>
+                        </div>
+
+                        <div>
+                            <label class="block text-sm font-medium text-gray-600 mb-2">Subject</label>
+                            <select
+                                class="form-input w-full bg-[#F8FAFC] border border-gray-200 rounded-xl px-4 py-3.5 text-black focus:outline-none">
+                                <option>General Inquiry</option>
+                                <option>IT Support Services</option>
+                                <option>Cybersecurity</option>
+                                <option>Business Process Outsourcing</option>
+                                <option>Partnership Opportunities</option>
+                            </select>
+                        </div>
+
+                        <div>
+                            <label class="block text-sm font-medium text-gray-600 mb-2">Message</label>
+                            <textarea rows="5" placeholder="Tell us about your operational needs..."
+                                class="form-input w-full bg-[#F8FAFC] border border-gray-200 rounded-xl px-4 py-3.5 text-black placeholder-gray-400 focus:outline-none resize-none"></textarea>
+                        </div>
+
+                        <div class="flex items-start gap-3">
+                            <input type="checkbox" id="privacy"
+                                class="mt-1 w-5 h-5 rounded border-gray-300 text-[#4A90E2] focus:ring-[#4A90E2]">
+                            <label for="privacy" class="text-sm text-gray-500">I agree to the <a href="#"
+                                    class="text-[#4A90E2] font-medium hover:underline">Privacy Policy</a> and terms of
+                                service.</label>
+                        </div>
+
+                        <button type="button"
+                            class="cta-btn w-full text-white py-4 rounded-xl text-base font-semibold flex items-center justify-center gap-3">
+                            Send Message
+                            <i class="fas fa-paper-plane text-sm"></i>
+                        </button>
+                    </form>
+                </div>
+            </div>
+
+        </div>
+    </section>
+
+   <div id="footer"></div>
+
+    <script>
+        // Simple GSAP animation for Hero Section only
+        window.addEventListener('load', () => {
+            gsap.to(".word-inner", {
+                y: 0,
+                opacity: 1,
+                duration: 1.2,
+                stagger: 0.1,
+                ease: "expo.out",
+                delay: 0.2
+            });
+        });
+    </script>
+
+    <script src="./docs/footer.js"></script>
+    <script src="./docs/navbar.js"></script>
+
+</body>
+
+</html>
