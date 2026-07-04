@@ -41,10 +41,6 @@ navbar.innerHTML = `
                                 class="flex items-center justify-between rounded-xl px-4 py-3 text-sm text-white/75 transition-colors hover:bg-white/5 hover:text-white">
                                 Smart Solutions <i class="fas fa-arrow-right text-[10px] opacity-50"></i>
                             </a>
-                            <a href="./index.html#services-horizontal"
-                                class="flex items-center justify-between rounded-xl px-4 py-3 text-sm text-white/75 transition-colors hover:bg-white/5 hover:text-white">
-                                Services Overview <i class="fas fa-arrow-right text-[10px] opacity-50"></i>
-                            </a>
                         </div>
                     </div>
                 </div>

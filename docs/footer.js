@@ -23,7 +23,7 @@ footer.innerHTML = `
                             competitive.
                         </p>
                     </div>
-                    <a href="#"
+                    <a href="./contact.html"
                         class="flex-shrink-0 inline-flex items-center gap-3 bg-gradient-to-r from-[#4A90E2] to-[#2E6FBE] text-white px-8 py-4 rounded-full text-base font-semibold shadow-lg shadow-blue-500/30 hover:shadow-blue-500/60 hover:-translate-y-1 transition-all duration-300">
                         Book a Demo
                         <i class="fas fa-arrow-right text-sm"></i>
@@ -36,7 +36,7 @@ footer.innerHTML = `
 
                 <!-- Brand & Description -->
                 <div class="lg:col-span-4 footer-col">
-                    <a href="#" class="flex items-center gap-3 mb-6">
+                    <a href="./index.html" class="flex items-center gap-3 mb-6">
                         <span class="text-3xl font-extrabold tracking-wider text-white">Dously</span>
                     </a>
                     <p class="text-white/50 text-sm leading-relaxed mb-8 max-w-sm">
@@ -67,16 +67,16 @@ footer.innerHTML = `
                 <div class="lg:col-span-2 footer-col">
                     <h4 class="text-sm font-bold uppercase tracking-wider text-white mb-6">Services</h4>
                     <ul class="space-y-4 text-sm">
-                        <li><a href="#" class="footer-link text-white/60 hover:text-white transition-colors">IT
+                        <li><a href="./it-support.html" class="footer-link text-white/60 hover:text-white transition-colors">IT
                                 Support</a></li>
-                        <li><a href="#"
+                        <li><a href="./cybersecurity.html"
                                 class="footer-link text-white/60 hover:text-white transition-colors">Cybersecurity</a>
                         </li>
-                        <li><a href="#" class="footer-link text-white/60 hover:text-white transition-colors">Smart
+                        <li><a href="./smart-solutions.html" class="footer-link text-white/60 hover:text-white transition-colors">Smart
                                 Solutions</a></li>
-                        <li><a href="#" class="footer-link text-white/60 hover:text-white transition-colors">Digital
+                        <li><a href="./digital-marketing.html" class="footer-link text-white/60 hover:text-white transition-colors">Digital
                                 Marketing</a></li>
-                        <li><a href="#" class="footer-link text-white/60 hover:text-white transition-colors">Web
+                        <li><a href="./web-development.html" class="footer-link text-white/60 hover:text-white transition-colors">Web
                                 Development</a></li>
                     </ul>
                 </div>
@@ -85,15 +85,15 @@ footer.innerHTML = `
                 <div class="lg:col-span-2 footer-col">
                     <h4 class="text-sm font-bold uppercase tracking-wider text-white mb-6">Company</h4>
                     <ul class="space-y-4 text-sm">
-                        <li><a href="#" class="footer-link text-white/60 hover:text-white transition-all ">About
+                        <li><a href="./index.html#about" class="footer-link text-white/60 hover:text-white transition-all ">About
                                 Us</a></li>
-                        <li><a href="#" class="footer-link text-white/60 hover:text-white transition-colors">Our
+                        <li><a href="./index.html#how-we-work" class="footer-link text-white/60 hover:text-white transition-colors">Our
                                 Team</a></li>
-                        <li><a href="#" class="footer-link text-white/60 hover:text-white transition-colors">Careers</a>
+                        <li><a href="./contact.html" class="footer-link text-white/60 hover:text-white transition-colors">Careers</a>
                         </li>
-                        <li><a href="#" class="footer-link text-white/60 hover:text-white transition-colors">Contact</a>
+                        <li><a href="./contact.html" class="footer-link text-white/60 hover:text-white transition-colors">Contact</a>
                         </li>
-                        <li><a href="#" class="footer-link text-white/60 hover:text-white transition-colors">FAQ</a>
+                        <li><a href="./index.html#faq" class="footer-link text-white/60 hover:text-white transition-colors">FAQ</a>
                         </li>
                     </ul>
                 </div>

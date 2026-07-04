@@ -1,0 +1,427 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>AUDITRA - Cybersecurity Services</title>
+    <script src="https://cdn.tailwindcss.com"></script>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700;800;900&display=swap"
+        rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+    <link rel="stylesheet" href="./docs/style.css">
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.12.5/gsap.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.12.5/ScrollTrigger.min.js"></script>
+    <link rel="stylesheet" href="./docs/services.css">
+</head>
+
+<body>
+
+    <div id="navbar"></div>
+
+    <!-- HERO SECTION -->
+    <section class="relative min-h-[70vh] flex items-center overflow-hidden bg-[#0A1A2F] pt-32 pb-20 px-5 lg:px-12">
+        <div class="absolute inset-0 hero-overlay z-0"></div>
+        <div class="absolute inset-0 grid-overlay z-0 opacity-40"></div>
+
+        <!-- Floating Orbs -->
+        <div class="absolute top-1/4 -left-20 w-96 h-96 rounded-full bg-[#4A90E2]/10 blur-[120px] z-0"></div>
+        <div class="absolute bottom-0 -right-20 w-96 h-96 rounded-full bg-[#D4AF37]/10 blur-[120px] z-0"></div>
+
+        <div class="relative z-10 max-w-7xl mx-auto w-full text-center py-10">
+            <div class="word-mask inline-flex items-center gap-3 mb-8">
+                <span class="word-inner inline-flex items-center gap-3">
+                    <span class="w-12 h-[1px] bg-gradient-to-r from-transparent to-[#D4AF37]"></span>
+                    <span class="text-sm tracking-[0.35em] uppercase text-[#D4AF37] font-medium">Cyber
+                        Security</span>
+                    <span class="w-12 h-[1px] bg-gradient-to-l from-transparent to-[#D4AF37]"></span>
+                </span>
+            </div>
+
+            <h1 class="font-bold text-white leading-[1.1] tracking-tight mb-8"
+                style="font-size: clamp(2.5rem, 6vw, 4.5rem);">
+                <span class="word-mask"><span class="word-inner">Protecting</span></span>
+                <span class="word-mask"><span class="word-inner">Digital</span></span>
+                <span class="word-mask"><span class="word-inner">Assets</span></span>
+                <span class="word-mask"><span class="word-inner">for</span></span>
+                <br>
+                <span class="word-mask"><span class="word-inner gradient-text">Modern Enterprises</span></span>
+            </h1>
+
+            <p class="word-mask max-w-3xl mx-auto">
+                <span class="word-inner text-lg md:text-xl text-white/60 leading-relaxed  block">
+                    We secure your digital backbone with proactive threat detection, incident response, and resilient
+                    security architecture across every layer of your business.
+                </span>
+            </p>
+        </div>
+    </section>
+
+    <!-- INTRO / OVERVIEW SECTION -->
+    <section class="relative bg-[#F8FAFC] py-14 lg:py-32 px-6 lg:px-12 rounded-t-[40px] -mt-10 z-10">
+        <div class="max-w-7xl mx-auto grid lg:grid-cols-2 md:gap-16 gap-8 lg:gap-24 items-center">
+
+            <div class="fade-up">
+                <div class="inline-flex items-center gap-3 mb-6">
+                    <span class="text-sm tracking-[0.35em] uppercase text-[#D4AF37] font-semibold">Overview</span>
+                </div>
+                <h2 class="text-3xl lg:text-4xl font-bold text-black leading-tight tracking-tight mb-6">
+                    Your Strategic <br> Security Partner
+                </h2>
+                <p class="text-lg text-gray-500 leading-relaxed mb-6">
+                    We don't just react to threats; we anticipate them. Our cybersecurity model is designed to reduce
+                    risk, strengthen resilience, and protect business continuity at scale.
+                </p>
+                <p class="text-base text-gray-400 leading-relaxed mb-8">
+                    By embedding directly into your operational workflows, we act as an extension of your team. From
+                    endpoint defense to cloud governance and incident response, we ensure your environment stays
+                    protected.
+                </p>
+
+                <div class="flex flex-wrap gap-6">
+                    <div class="flex items-center gap-3 text-gray-700 font-medium">
+                        <div class="w-10 h-10 rounded-full bg-[#4A90E2]/10 flex items-center justify-center">
+                            <i class="fas fa-check text-sm text-[#4A90E2]"></i>
+                        </div>
+                        Security Governance
+                    </div>
+                    <div class="flex items-center gap-3 text-gray-700 font-medium">
+                        <div class="w-10 h-10 rounded-full bg-[#D4AF37]/10 flex items-center justify-center">
+                            <i class="fas fa-check text-sm text-[#D4AF37]"></i>
+                        </div>
+                        Proactive Monitoring
+                    </div>
+                </div>
+            </div>
+
+            <div class="fade-up relative">
+                <div
+                    class="absolute -top-6 -right-6 w-32 h-32 border-r-4 border-t-4 border-[#D4AF37] rounded-tr-3xl z-20 hidden lg:block">
+                </div>
+                <div
+                    class="absolute -bottom-6 -left-6 w-32 h-32 border-l-4 border-b-4 border-[#4A90E2] rounded-bl-3xl z-20 hidden lg:block">
+                </div>
+
+                <div class="relative rounded-3xl overflow-hidden shadow-2xl shadow-blue-900/10 group">
+                    <img src="https://media.istockphoto.com/id/2233776792/photo/phishing-cyber-security-ransomware-fingerprint-email-encrypted-technology-digital-information.jpg?s=612x612&w=0&k=20&c=1RUj5PkjpuFIEbPiQBM-X2Sy2exDzrVeToHTCVgbgFA="
+                        alt="Cybersecurity Team"
+                        class="w-full md:h-[450px] h-auto object-cover transition-transform duration-700 group-hover:scale-105">
+                    <div class="absolute inset-0 bg-gradient-to-t from-[#0A1A2F]/40 to-transparent"></div>
+                </div>
+            </div>
+
+        </div>
+    </section>
+
+    <section class="bg-white py-14 lg:py-24 px-6 lg:px-12">
+        <div class="max-w-7xl mx-auto">
+            <div class="text-center max-w-3xl mx-auto md:mb-20 mb-8 fade-up">
+                <span class="inline-block text-xs font-bold tracking-[0.25em] text-[#4A90E2] uppercase mb-4">What We
+                    Deliver</span>
+                <h2 class="text-3xl lg:text-5xl font-bold text-black leading-tight tracking-tight mb-5">
+                    Core Cybersecurity Capabilities
+                </h2>
+                <p class="text-lg text-gray-500 leading-relaxed">
+                    Comprehensive solutions tailored to protect your enterprise from modern threats and data loss.
+                </p>
+            </div>
+
+            <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-8 lg:gap-5">
+
+                <div class="flip-card fade-up">
+                    <div class="flip-card-inner">
+                        <div class="flip-card-front">
+                            <div class="flip-icon-ring flip-icon-blue">
+                                <i class="fas fa-shield-halved text-2xl text-[#4A90E2]"></i>
+                            </div>
+                            <h3 class="text-xl font-bold text-black mb-3 tracking-tight">Managed Security Services</h3>
+                            <p class="text-gray-500 text-sm leading-relaxed">Continuous protection, policy enforcement,
+                                and 24/7 oversight across your security stack.</p>
+                            <span class="flip-hint">Hover to explore <i class="fas fa-arrow-right ml-1"></i></span>
+                        </div>
+                        <div class="flip-card-back"
+                            style="background-image:linear-gradient(180deg, rgba(10,15,26,0.55), rgba(10,15,26,0.92)), url('https://images.unsplash.com/photo-1563986768609-322da13575f3?q=80&w=800&auto=format&fit=crop');">
+                            <i class="fas fa-shield-halved text-3xl text-[#4A90E2] mb-4"></i>
+                            <h3 class="text-lg font-bold text-white mb-3 tracking-tight">Managed Security Services</h3>
+                            <p class="text-gray-200 text-sm leading-relaxed">Always-on monitoring, hardening, and
+                                lifecycle management to keep your environment secure and compliant.</p>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="flip-card fade-up">
+                    <div class="flip-card-inner">
+                        <div class="flip-card-front">
+                            <div class="flip-icon-ring flip-icon-gold">
+                                <i class="fas fa-user-shield text-2xl text-[#D4AF37]"></i>
+                            </div>
+                            <h3 class="text-xl font-bold text-black mb-3 tracking-tight">24/7 Threat Response</h3>
+                            <p class="text-gray-500 text-sm leading-relaxed">Round-the-clock analysis and incident
+                                response to contain attacks before they spread.</p>
+                            <span class="flip-hint">Hover to explore <i class="fas fa-arrow-right ml-1"></i></span>
+                        </div>
+                        <div class="flip-card-back"
+                            style="background-image:linear-gradient(180deg, rgba(20,15,4,0.55), rgba(20,15,4,0.92)), url('https://media.istockphoto.com/id/1311084163/photo/security-guard-watching-video-monitoring-surveillance-security-system.jpg?s=612x612&w=0&k=20&c=SzEkOlAi4IkoY9Csq98_tGUXa5p_OlluINJnjmFbqv8=');">
+                            <i class="fas fa-user-shield text-3xl text-[#D4AF37] mb-4"></i>
+                            <h3 class="text-lg font-bold text-white mb-3 tracking-tight">24/7 Threat Response</h3>
+                            <p class="text-gray-200 text-sm leading-relaxed">A dedicated security response team ready
+                                to triage alerts and neutralize risks worldwide.</p>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="flip-card fade-up">
+                    <div class="flip-card-inner">
+                        <div class="flip-card-front">
+                            <div class="flip-icon-ring flip-icon-blue">
+                                <i class="fas fa-lock text-2xl text-[#4A90E2]"></i>
+                            </div>
+                            <h3 class="text-xl font-bold text-black mb-3 tracking-tight">Zero Trust Architecture</h3>
+                            <p class="text-gray-500 text-sm leading-relaxed">Scalable identity-first controls and cloud
+                                protections across leading platforms.</p>
+                            <span class="flip-hint">Hover to explore <i class="fas fa-arrow-right ml-1"></i></span>
+                        </div>
+                        <div class="flip-card-back"
+                            style="background-image:linear-gradient(180deg, rgba(10,15,26,0.55), rgba(10,15,26,0.92)), url('https://images.unsplash.com/photo-1504384308090-c894fdcc538d?q=80&w=800&auto=format&fit=crop');">
+                            <i class="fas fa-lock text-3xl text-[#4A90E2] mb-4"></i>
+                            <h3 class="text-lg font-bold text-white mb-3 tracking-tight">Zero Trust Architecture</h3>
+                            <p class="text-gray-200 text-sm leading-relaxed">Security controls built around least
+                                privilege, strong identity checks, and segmented access.</p>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="flip-card fade-up">
+                    <div class="flip-card-inner">
+                        <div class="flip-card-front">
+                            <div class="flip-icon-ring flip-icon-gold">
+                                <i class="fas fa-binoculars text-2xl text-[#D4AF37]"></i>
+                            </div>
+                            <h3 class="text-xl font-bold text-black mb-3 tracking-tight">Threat Hunting</h3>
+                            <p class="text-gray-500 text-sm leading-relaxed">Real-time telemetry, alerting, and anomaly
+                                detection to uncover hidden risks early.</p>
+                            <span class="flip-hint">Hover to explore <i class="fas fa-arrow-right ml-1"></i></span>
+                        </div>
+                        <div class="flip-card-back"
+                            style="background-image:linear-gradient(180deg, rgba(20,15,4,0.55), rgba(20,15,4,0.92)), url('https://images.unsplash.com/photo-1550751827-4bd374c3f58b?q=80&w=800&auto=format&fit=crop');">
+                            <i class="fas fa-binoculars text-3xl text-[#D4AF37] mb-4"></i>
+                            <h3 class="text-lg font-bold text-white mb-3 tracking-tight">Threat Hunting</h3>
+                            <p class="text-gray-200 text-sm leading-relaxed">Continuous visibility across endpoints
+                                and networks, catching suspicious behavior before it escalates.</p>
+                        </div>
+                    </div>
+                </div>
+
+            </div>
+        </div>
+    </section>
+
+    <section class="relative bg-[#F8FAFC] py-14 lg:py-32 px-6 lg:px-12">
+        <div class="max-w-7xl mx-auto grid lg:grid-cols-2 md:gap-16 gap-10 lg:gap-24 items-center">
+
+            <!-- Left: Image -->
+            <div class="relative order-1 lg:order-1">
+                <div
+                    class="absolute -top-6 -left-6 w-32 h-32 border-l-4 border-t-4 border-[#4A90E2] rounded-tl-3xl z-20 hidden lg:block">
+                </div>
+                <div
+                    class="absolute -bottom-6 -right-6 w-32 h-32 border-r-4 border-b-4 border-[#D4AF37] rounded-br-3xl z-20 hidden lg:block">
+                </div>
+
+                <div class="relative rounded-3xl overflow-hidden shadow-2xl shadow-blue-900/10 group">
+                    <img src="https://media.istockphoto.com/id/2278430956/photo/cybersecurity-data-protection-global-network-shield-concept.jpg?s=612x612&w=0&k=20&c=0OscgWYZbcG5_HE7rq4MqJabhbiov0Az4Cm8dIEj_dY="
+                        alt="Cybersecurity Infrastructure"
+                        class="w-full md:h-[450px] h-auto object-cover transition-transform duration-700 group-hover:scale-105">
+                    <div class="absolute inset-0 bg-gradient-to-t from-[#0A1A2F]/40 to-transparent"></div>
+                </div>
+            </div>
+
+            <!-- Right: Content -->
+            <div class="order-2 lg:order-2 fade-up">
+                <div class="inline-flex items-center gap-3 mb-6">
+                    <span class="text-sm tracking-[0.35em] uppercase text-[#D4AF37] font-semibold">Operational
+                        Defense</span>
+                </div>
+                <h2 class="text-3xl lg:text-4xl font-bold text-black leading-tight tracking-tight mb-6">
+                    Resilient Security, <br> Seamless Operations
+                </h2>
+                <p class="text-lg text-gray-500 leading-relaxed mb-6">
+                    In today's fast-paced digital landscape, breaches and downtime are not an option. We engineer your
+                    security posture to be highly available, resilient, and ready to withstand enterprise-scale threats.
+                </p>
+                <p class="text-base text-gray-400 leading-relaxed mb-8">
+                    Our distributed security teams operate across time zones to provide continuous monitoring and
+                    immediate incident response. We align our controls directly with your business outcomes, ensuring
+                    protection accelerates growth rather than hindering it.
+                </p>
+
+                <div class="flex flex-wrap gap-6">
+                    <div class="flex items-center gap-3 text-gray-700 font-medium">
+                        <div class="w-10 h-10 rounded-full bg-[#4A90E2]/10 flex items-center justify-center">
+                            <i class="fas fa-bolt text-sm text-[#4A90E2]"></i>
+                        </div>
+                        Rapid Incident Response
+                    </div>
+                    <div class="flex items-center gap-3 text-gray-700 font-medium">
+                        <div class="w-10 h-10 rounded-full bg-[#D4AF37]/10 flex items-center justify-center">
+                            <i class="fas fa-globe text-sm text-[#D4AF37]"></i>
+                        </div>
+                        Global Security Management
+                    </div>
+                </div>
+            </div>
+
+        </div>
+    </section>
+
+    <section class="py-16 lg:py-24 px-6 lg:px-12 bg-white">
+        <div class="max-w-7xl mx-auto">
+            <div class="text-center max-w-3xl mx-auto md:mb-20 mb-8 fade-up">
+                <div class="inline-flex items-center gap-3 mb-6">
+                    <span class="w-8 h-[1px] bg-[#D4AF37]"></span>
+                    <span class="text-sm tracking-[0.35em] uppercase text-[#D4AF37] font-semibold">OUR PROCESS</span>
+                    <span class="w-8 h-[1px] bg-[#D4AF37]"></span>
+                </div>
+                <h2 class="text-3xl lg:text-4xl font-bold text-black leading-tight tracking-tight">
+                    How We Secure Your Business
+                </h2>
+            </div>
+
+            <div class="relative">
+                <div class="process-line hidden md:block"></div>
+                <div id="process-line" class="process-line-active hidden md:block"></div>
+
+                <div class="grid grid-cols-1 md:grid-cols-3 gap-4 md:gap-8 relative z-10">
+
+                    <div class="fade-up process-card">
+                        <div class="process-number">01</div>
+                        <div class="process-icon-ring process-icon-blue">
+                            <i class="fas fa-search text-2xl text-[#4A90E2]"></i>
+                        </div>
+                        <h4 class="text-xl font-bold text-black mb-3">Assess</h4>
+                        <p class="text-gray-500 text-sm leading-relaxed">We conduct a full security audit of your
+                            environment to identify vulnerabilities, exposures, and gaps.</p>
+                    </div>
+
+                    <div class="fade-up process-card">
+                        <div class="process-number">02</div>
+                        <div class="process-icon-ring process-icon-gold">
+                            <i class="fas fa-shield-halved text-2xl text-[#D4AF37]"></i>
+                        </div>
+                        <h4 class="text-xl font-bold text-black mb-3">Harden</h4>
+                        <p class="text-gray-500 text-sm leading-relaxed">We implement secure controls, governance,
+                            and response workflows across your critical systems.</p>
+                    </div>
+
+                    <div class="fade-up process-card">
+                        <div class="process-number">03</div>
+                        <div class="process-icon-ring process-icon-blue">
+                            <i class="fas fa-chart-line text-2xl text-[#4A90E2]"></i>
+                        </div>
+                        <h4 class="text-xl font-bold text-black mb-3">Monitor &amp; Respond</h4>
+                        <p class="text-gray-500 text-sm leading-relaxed">Continuous monitoring, threat hunting, and
+                            scaling response capacity as your environment grows.</p>
+                    </div>
+
+                </div>
+            </div>
+        </div>
+    </section>
+
+
+    <section class="relative bg-[#0A1A2F] py-16 lg:py-32 px-6 lg:px-12 overflow-hidden">
+        <div class="absolute top-0 left-1/4 w-96 h-96 rounded-full bg-[#4A90E2]/10 blur-[150px] pointer-events-none">
+        </div>
+        <div class="absolute bottom-0 right-1/4 w-96 h-96 rounded-full bg-[#D4AF37]/5 blur-[150px] pointer-events-none">
+        </div>
+        <div class="absolute inset-0 stat-grid pointer-events-none"></div>
+
+        <div class="max-w-7xl mx-auto relative z-10">
+            <div class="text-center max-w-2xl mx-auto md:mb-16 mb-8 fade-up">
+                <div class="inline-flex items-center gap-3 mb-6">
+                    <span class="w-8 h-[1px] bg-[#D4AF37]"></span>
+                    <span class="text-sm tracking-[0.35em] uppercase text-[#D4AF37] font-semibold">By The Numbers</span>
+                    <span class="w-8 h-[1px] bg-[#D4AF37]"></span>
+                </div>
+                <h2 class="text-3xl lg:text-4xl font-bold text-white leading-tight tracking-tight">
+                    Trusted at Enterprise Scale
+                </h2>
+            </div>
+
+            <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-6 lg:gap-8">
+
+                <div class="fade-up stat-card">
+                    <i class="fas fa-shield-halved stat-icon"></i>
+                    <div class="display text-4xl lg:text-5xl font-bold gradient-text mb-2 counter" data-target="99">0
+                    </div>
+                    <div class="text-sm text-white/40 uppercase tracking-wider">Threats Blocked %</div>
+                </div>
+
+                <div class="fade-up stat-card">
+                    <i class="fas fa-user-shield stat-icon"></i>
+                    <div class="display text-4xl lg:text-5xl font-bold gradient-text mb-2 counter" data-target="24">0
+                    </div>
+                    <div class="text-sm text-white/40 uppercase tracking-wider">/7 Monitoring</div>
+                </div>
+
+                <div class="fade-up stat-card">
+                    <i class="fas fa-network-wired stat-icon"></i>
+                    <div class="display text-4xl lg:text-5xl font-bold gradient-text mb-2 counter" data-target="500">0
+                    </div>
+                    <div class="text-sm text-white/40 uppercase tracking-wider">Protected Endpoints</div>
+                </div>
+
+                <div class="fade-up stat-card">
+                    <i class="fas fa-award stat-icon"></i>
+                    <div class="display text-4xl lg:text-5xl font-bold gradient-text mb-2 counter" data-target="15">0
+                    </div>
+                    <div class="text-sm text-white/40 uppercase tracking-wider">Security Audits</div>
+                </div>
+
+            </div>
+        </div>
+    </section>
+
+    <section class="bg-white   relative ">
+        <div
+            class="w-full mx-auto fade-up bg-[#F8FAFC] border border-gray-100 p-5 lg:p-16 overflow-hidden text-center cta-panel">
+            <div class="absolute top-0 right-0 w-72 h-72 bg-[#4A90E2]/10 blur-[90px] pointer-events-none"></div>
+            <div class="absolute bottom-0 left-0 w-72 h-72 bg-[#D4AF37]/10 blur-[90px] pointer-events-none"></div>
+            <div class="absolute inset-0 cta-grid pointer-events-none"></div>
+
+            <div class="relative z-10 py-20 flex flex-col items-center">
+                <div class="inline-flex items-center gap-3 mb-6">
+                    <span class="w-8 h-[1px] bg-[#D4AF37]"></span>
+                    <span class="text-sm tracking-[0.35em] uppercase text-[#D4AF37] font-semibold">Let's Talk</span>
+                    <span class="w-8 h-[1px] bg-[#D4AF37]"></span>
+                </div>
+                <h2 class="text-3xl lg:text-4xl font-bold text-black tracking-tight mb-4 max-w-2xl">
+                    Ready to strengthen your security posture?
+                </h2>
+                <p class="text-gray-500 text-lg max-w-xl mb-10 leading-relaxed">
+                    Let's discuss how our cybersecurity services can make your organization safer, stronger, and more
+                    resilient.
+                </p>
+                <a href="/contact.html"
+                    class="cta-btn-light inline-flex items-center gap-3 px-8 py-4 rounded-full text-base font-semibold">
+                    Book a Demo
+                    <i class="fas fa-arrow-right text-sm cta-arrow"></i>
+                </a>
+            </div>
+        </div>
+    </section>
+
+
+    <div id="footer"></div>
+
+
+
+    <script src="./docs/services.js"></script>
+    <script src="./docs/footer.js"></script>
+    <script src="./docs/navbar.js"></script>
+
+</body>
+
+</html>
