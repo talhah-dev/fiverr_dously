@@ -10,6 +10,8 @@ function initHorizontalScroll() {
         return;
     }
 
+    const isDesktop = window.matchMedia("(min-width: 1024px)").matches;
+
     if (horizontalTween) {
         horizontalTween.scrollTrigger && horizontalTween.scrollTrigger.kill();
         horizontalTween.kill();
@@ -17,6 +19,11 @@ function initHorizontalScroll() {
     }
 
     gsap.set(horizontalWrapper, { x: 0 });
+
+    if (!isDesktop) {
+        progressFill.style.width = "0%";
+        return;
+    }
 
     const totalWidth = horizontalWrapper.scrollWidth;
     const viewportWidth = window.innerWidth;
