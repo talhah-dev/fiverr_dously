@@ -45,7 +45,7 @@ navbar.innerHTML = `
                     </div>
                 </div>
 
-                <a href="./index.html#about" class="nav-link">About</a>
+                <a href="./about.html" class="nav-link">About</a>
                 <a href="./contact.html" class="nav-link">Contact</a>
             </div>
 
@@ -84,7 +84,7 @@ navbar.innerHTML = `
             <a href="./smart-solutions.html" class="mobile-link py-4 px-4 rounded-lg flex items-center justify-between">
                 Smart Solutions <i class="fas fa-chevron-right text-xs opacity-50"></i>
             </a>
-            <a href="./index.html#about" class="mobile-link py-4 px-4 rounded-lg flex items-center justify-between">
+            <a href="./about.html" class="mobile-link py-4 px-4 rounded-lg flex items-center justify-between">
                 About - Our Team <i class="fas fa-chevron-right text-xs opacity-50"></i>
             </a>
             <a href="./contact.html" class="mobile-link py-4 px-4 rounded-lg flex items-center justify-between">
