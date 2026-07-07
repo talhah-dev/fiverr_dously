@@ -5,7 +5,7 @@ navbar.innerHTML = `
         <div class="max-w-7xl mx-auto flex items-center justify-between">
 
             <a href="./index.html" class="flex items-center gap-3">
-                <span class="text-white text-3xl font-bold tracking-wider">Dously</span>
+                <img src="./docs/assets/logo.png" alt="Dously" class="h-10 w-auto object-contain invert brightness-0" />
             </a>
 
             <div class="hidden lg:flex items-center gap-8 text-sm font-medium text-white/80">

@@ -37,7 +37,7 @@ footer.innerHTML = `
                 <!-- Brand & Description -->
                 <div class="lg:col-span-4 footer-col">
                     <a href="./index.html" class="flex items-center gap-3 mb-6">
-                        <span class="text-3xl font-extrabold tracking-wider text-white">Dously</span>
+                        <img src="./docs/assets/logo.png" alt="Dously" class="h-10 w-auto invert brightness-0 object-contain" />
                     </a>
                     <p class="text-white/50 text-sm leading-relaxed mb-8 max-w-sm">
                         A global technology services firm partnering with organisations to design, build and operate
@@ -113,7 +113,7 @@ footer.innerHTML = `
                     </form>
                     <div class="flex items-center gap-3 text-sm text-white/60">
                         <i class="fas fa-headset text-[#4A90E2]"></i>
-                        <span>24/7 Enterprise Support: +1 (555) 000-0000</span>
+                        <span>24/7 Enterprise Support: +234 803 418 7772</span>
                     </div>
                 </div>
 
@@ -121,7 +121,7 @@ footer.innerHTML = `
 
             <!-- Bottom Bar -->
             <div class="pt-8 border-t border-white/10 flex flex-col md:flex-row items-center justify-between gap-6">
-                <p class="text-sm text-white/40">© 2024 Dously Compliance. All rights reserved.</p>
+                <p class="text-sm text-white/40">© 2026 Dously Compliance. All rights reserved.</p>
                 <div class="flex items-center gap-6 text-sm text-white/40">
                     <a href="#" class="hover:text-white transition-colors">Privacy Policy</a>
                     <a href="#" class="hover:text-white transition-colors">Terms of Service</a>
